@@ -3492,39 +3492,6 @@ the height difference of the two baselines is
 \RequirePackage{atveryend}[2010/03/24]
 %    \end{macrocode}
 %
-% \subsubsection{Support for \hologo{LuaTeX}}
-%
-%    \begin{macrocode}
-\ifluatex
-  \ifnum\luatexversion<39 %
-  \else
-    \begingroup
-      \escapechar=-1 %
-      \def\ZREF@temp#1{%
-        \ltx@IfUndefined{\string#1}{%
-          \let#1\ltx@undefined
-          \directlua{%
-            if tex.enableprimitives then %
-              tex.enableprimitives('', {'\string#1'})%
-            end%
-          }%
-          \ltx@ifundefined{\string#1}{%
-          }{%
-            \global#1=#1%
-            \@PackageInfoNoLine{zref-pagelayout}{%
-              \string#1 enabled%
-            }%
-          }%
-        }{}%
-      }%
-      \ZREF@temp\pdfpagewidth
-      \ZREF@temp\pdfpageheight
-      \ZREF@temp\pdfhorigin
-      \ZREF@temp\pdfvorigin
-    \endgroup
-  \fi
-\fi
-%    \end{macrocode}
 %
 % \subsubsection{Define layout properties}
 %
@@ -3550,10 +3517,29 @@ the height difference of the two baselines is
 \ZREF@temp\stockheight % memoir.cls, crop.sty
 \ZREF@temp\mediawidth % VTeX
 \ZREF@temp\mediaheight % VTeX
+\ifluatex
+\zref@newprop*{pdfvorigin}%
+                             [\number\pdfvariable vorigin]% hash-ok
+                             {\number\pdfvariable vorigin}%
+\zref@addprop{thepage}{pdfvorigin}
+\zref@newprop*{pdfhorigin}%
+                             [\number\pdfvariable horigin]% hash-ok
+                             {\number\pdfvariable horigin}%
+\zref@addprop{thepage}{pdfhorigin}
+\zref@newprop*{pdfpageheight}%
+                             [\number\pageheight]% hash-ok
+                             {\number\pageheight}%
+\zref@addprop{thepage}{pdfpageheight}
+\zref@newprop*{pdfpagewidth}%
+                             [\number\pagewidth]% hash-ok
+                             {\number\pagewidth}%
+\zref@addprop{thepage}{pdfpagewidth}
+\else
 \ZREF@temp\pdfpagewidth
 \ZREF@temp\pdfpageheight
 \ZREF@temp\pdfhorigin
 \ZREF@temp\pdfvorigin
+\fi
 \ZREF@temp\hoffset
 \ZREF@temp\voffset
 \ZREF@temp\topmargin
@@ -6647,6 +6633,13 @@ the height difference of the two baselines is
 %     Documentation updates.
 %   \item
 %     Use \xpackage{iftex} directly.
+%   \end{Version}
+%   \begin{Version}{2020/03/01 v2.29}
+%   \item
+%     adapted in module zref-pagelayout the properties pdfhorigin, pdfvorigin,
+%     pdfpagewidth, pdfpageheight for luatex to the right primitives.
+%   \item
+%     Removed no longer needed code for older lualatex versions.
 %   \end{Version}
 % \end{History}
 %
