@@ -1,0 +1,162 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line ....
+Completed box being shipped out [1]
+\vbox(633.0+0.0)x407.0
+.\hbox(0.0+0.0)x0.0
+..\write1{\zref@newlabel{thepage1}{\page{\Z@C@page }\pagevalue{\Z@C@pagevalue }\mag{\Z@C@mag }\paperwidth{\Z@C@paperwidth }\paperheight{\Z@C@paperheight }\pdfpagewidth{\Z@C@pdfpagewidth }\pdfpageheight{\Z@C@pdfpageheight }\pdfhorigin{\Z@C@pdfhorigin }\pdfvorigin{\Z@C@pdfvorigin }\hoffset{\Z@C@hoffset }\voffset{\Z@C@voffset }\topmargin{\Z@C@topmargin }\oddsidemargin{\Z@C@oddsidemargin }\evensidemargin{\Z@C@evensidemargin }\textwidth{\Z@C@textwidth }\textheight{\Z@C@textheight }\headheight{\Z@C@headheight }\headsep{\Z@C@headsep }\footskip{\Z@C@footskip }\marginparwidth{\Z@C@marginparwidth }\marginparsep{\Z@C@marginparsep }\columnwidth{\Z@C@columnwidth }\columnsep{\Z@C@columnsep }\outputboxwd{\Z@C@outputboxwd }\outputboxht{\Z@C@outputboxht }\outputboxdp{\Z@C@outputboxdp }}}
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 443.95258fil
+...\write-{}
+...\glue(\topskip) 3.55556
+...\hbox(6.44444+0.0)x345.0, glue set 256.66646fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 1
+....\OT1/cmr/m/n/10 8
+....\OT1/cmr/m/n/10 6
+....\OT1/cmr/m/n/10 4
+....\OT1/cmr/m/n/10 6
+....\OT1/cmr/m/n/10 7
+....\OT1/cmr/m/n/10 9
+....\glue 3.33333 plus 1.66666 minus 1.11111
+....\OT1/cmr/m/n/10 1
+....\OT1/cmr/m/n/10 8
+....\OT1/cmr/m/n/10 6
+....\OT1/cmr/m/n/10 4
+....\OT1/cmr/m/n/10 6
+....\OT1/cmr/m/n/10 7
+....\OT1/cmr/m/n/10 9
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 5.05556
+...\hbox(6.94444+0.0)x345.0, glue set 303.88882fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 m
+....\OT1/cmr/m/n/10 e
+....\OT1/cmr/m/n/10 d
+....\OT1/cmr/m/n/10 i
+....\OT1/cmr/m/n/10 a
+....\write1{\zref@newlabel{a}{\default{}\page{\Z@C@page }\abspage{\Z@C@abspage }}}
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 5.55556
+...\hbox(6.44444+0.0)x345.0, glue set 289.99988fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 1
+....\OT1/cmr/m/n/10 8
+....\OT1/cmr/m/n/10 6
+....\OT1/cmr/m/n/10 4
+....\OT1/cmr/m/n/10 6
+....\OT1/cmr/m/n/10 7
+....\OT1/cmr/m/n/10 9
+....\OT1/cmr/m/n/10 8
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 5.55556
+...\hbox(6.44444+0.0)x345.0, glue set 289.99988fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 1
+....\OT1/cmr/m/n/10 8
+....\OT1/cmr/m/n/10 6
+....\OT1/cmr/m/n/10 4
+....\OT1/cmr/m/n/10 6
+....\OT1/cmr/m/n/10 7
+....\OT1/cmr/m/n/10 9
+....\OT1/cmr/m/n/10 8
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 5.55556
+...\hbox(6.44444+0.0)x345.0, glue set 324.99998fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 0
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 7.69446
+...\hbox(4.30554+1.94444)x345.0, glue set 305.24994fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 p
+....\OT1/cmr/m/n/10 a
+....\OT1/cmr/m/n/10 p
+....\kern0.27779
+....\OT1/cmr/m/n/10 e
+....\OT1/cmr/m/n/10 r
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 3.61111
+...\hbox(6.44444+0.0)x345.0, glue set 289.99988fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 4
+....\OT1/cmr/m/n/10 0
+....\OT1/cmr/m/n/10 2
+....\OT1/cmr/m/n/10 5
+....\OT1/cmr/m/n/10 8
+....\OT1/cmr/m/n/10 4
+....\OT1/cmr/m/n/10 3
+....\OT1/cmr/m/n/10 7
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 5.55556
+...\hbox(6.44444+0.0)x345.0, glue set 289.99988fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 1
+....\OT1/cmr/m/n/10 8
+....\OT1/cmr/m/n/10 6
+....\OT1/cmr/m/n/10 4
+....\OT1/cmr/m/n/10 6
+....\OT1/cmr/m/n/10 7
+....\OT1/cmr/m/n/10 9
+....\OT1/cmr/m/n/10 8
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 5.55556
+...\hbox(6.44444+0.0)x345.0, glue set 286.66655fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 -
+....\discretionary
+....\OT1/cmr/m/n/10 3
+....\OT1/cmr/m/n/10 3
+....\OT1/cmr/m/n/10 4
+....\OT1/cmr/m/n/10 5
+....\OT1/cmr/m/n/10 2
+....\OT1/cmr/m/n/10 3
+....\OT1/cmr/m/n/10 5
+....\OT1/cmr/m/n/10 5
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 23.55556
+..\hbox(6.44444+0.0)x345.0, glue set 170.0fil
+...\glue 0.0 plus 1.0fil
+...\OT1/cmr/m/n/10 1
+...\glue 0.0 plus 1.0fil
+.\kern 0.0
+Package atveryend Info: Executing hook `AfterLastShipout' on input line ....
+(zref-test-abspos.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line ....
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line ....
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line ....

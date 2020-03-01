@@ -1,0 +1,45 @@
+\input{regression-test}
+\documentclass{article}
+\usepackage{zref-abspos,zref-user}
+\ifluatex
+\pdfvariable horigin=1cm
+\pdfvariable vorigin=1cm
+\else
+ \ifxetex
+ \else
+\pdfhorigin=1cm
+\pdfvorigin=1cm
+ \fi
+\fi
+\begin{document}
+\START\showoutput
+\makeatletter
+
+\ZREF@abspos@origin@x{a}
+\ZREF@abspos@origin@y{a}
+
+media\zlabel{a}
+\ifluatex
+ \pagewidth 10cm
+ \pageheight 10cm
+\else
+
+ \pdfpagewidth 10cm
+ \pdfpageheight 10 cm
+\fi
+\makeatletter
+
+\zref@absposx{a}{media}{right}
+
+\zref@absposy{a}{media}{top}
+
+\zref@absposy{a}{media}{bottom}
+
+paper
+
+\zref@absposx{a}{paper}{right}
+
+\zref@absposy{a}{paper}{top}
+
+\zref@absposy{a}{paper}{bottom}
+\end{document}
