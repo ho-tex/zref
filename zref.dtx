@@ -1322,7 +1322,7 @@ and the derived files
 %
 % \subsection{Module \xmodule{abspos}}
 % Module \xmodule{abspos} allows to get various values of the page layout. There is no user
-% command, only two internal commands:
+% command, only a number of internal commands. For example:
 % \begin{quote}
 %   |\zref@absposx{|\meta{label}|}{|\meta{value}|}{|\meta{position}|}|\\
 %   |\zref@absposy{|\meta{label}|}{|\meta{value}|}{|\meta{position}|}|
@@ -6706,7 +6706,8 @@ the height difference of the two baselines is
 %     pdfpagewidth, pdfpageheight for luatex to the right primitives.
 %   \item
 %     Removed no longer needed code for older lualatex versions.
-%   \item added some documentation of the abspos module.   
+%   \item added some documentation of the abspos module.
+%   \item adapted the abspos module to the new luatex primitives.
 %   \end{Version}
 % \end{History}
 %
