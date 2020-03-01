@@ -5295,19 +5295,12 @@ the height difference of the two baselines is
   \expandafter\endinput
 \fi
 %    \end{macrocode}
-% LuaTeX compatibility
-%    \begin{macrocode}
-\ifx\pdfsavepos\@undefined
-  \let\pdfsavepos          \savepos
-  \let\pdflastxpos         \lastxpos
-  \let\pdflastypos         \lastypos
-\fi
-%    \end{macrocode}
 %
 % \subsubsection{Availability}
 %
 %    First we check, whether the feature is available.
 %    \begin{macrocode}
+\ifx\directlua\@undefined
 \ltx@IfUndefined{pdfsavepos}{%
   \PackageError\ZREF@name{%
     \string\pdfsavepos\space is not supported.\MessageBreak
@@ -5315,6 +5308,7 @@ the height difference of the two baselines is
   }\ZREF@UpdatePdfTeX
   \endinput
 }{}%
+\fi
 %    \end{macrocode}
 %    In PDF mode we are done. However support for DVI mode
 %    was added later in version 1.40.0. In earlier versions
@@ -5342,8 +5336,13 @@ the height difference of the two baselines is
 %
 %    \begin{macrocode}
 \zref@newlist{savepos}
-\zref@newprop*{posx}[0]{\the\pdflastxpos}
-\zref@newprop*{posy}[0]{\the\pdflastypos}
+\ifx\directlua\@undefined
+  \zref@newprop*{posx}[0]{\the\pdflastxpos}
+  \zref@newprop*{posy}[0]{\the\pdflastypos}
+\else
+  \zref@newprop*{posx}[0]{\the\lastxpos}
+  \zref@newprop*{posy}[0]{\the\lastypos}
+\fi
 \zref@addprops{savepos}{posx,posy}
 %    \end{macrocode}
 %
@@ -5351,11 +5350,19 @@ the height difference of the two baselines is
 %
 %    \begin{macro}{\zref@savepos}
 %    \begin{macrocode}
-\def\zref@savepos{%
-  \if@filesw
-    \pdfsavepos
-  \fi
-}
+\ifx\directlua\@undefined
+  \def\zref@savepos{%
+    \if@filesw
+      \pdfsavepos
+    \fi
+  }
+\else
+  \def\zref@savepos{%
+    \if@filesw
+      \savepos
+    \fi
+  }
+\fi
 %    \end{macrocode}
 %    \end{macro}
 %
@@ -6728,6 +6735,7 @@ the height difference of the two baselines is
 %   \item adapted the abspos module to the new luatex primitives.
 %   \item adapted pageattr module to the new luatex primitives.
 %   \item added short documentation for pageattr module
+%   \item use luatex command names directly in zref-savepos rather than defining pdftex compatibility names.
 %   \end{Version}
 % \end{History}
 %
