@@ -1,0 +1,37 @@
+\input{regression-test}
+\documentclass{article}
+
+\usepackage{zref-pageattr}
+\usepackage{zref-user}
+
+\begin{document}
+\START \showoutput
+abc%\zlabel{a}
+\ifluatex
+  \pdfvariable pageattr {/Rotate 90}
+  \pdfvariable pagesattr {/Rotate -90}
+\else
+  \ifxetex \else
+  \pdfpageattr {/Rotate 90}
+  \pdfpagesattr {/Rotate -90}
+  \fi
+ \fi
+\makeatletter%\show\zref@hex
+
+\newpage
+\pagenumbering{roman}
+abc
+\ifluatex
+  \pdfvariable pageattr {/Rotate 180}
+\else
+  \ifxetex \else
+  \pdfpageattr {/Rotate 180}
+  \fi
+ \fi
+
+\zref@pdfpageattr{1}
+\zref@pdfpageattr{2}
+\zref@pdfpageattr{3}
+\zref@pdfpagesattr
+
+\end{document}
