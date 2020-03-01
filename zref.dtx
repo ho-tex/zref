@@ -1454,6 +1454,17 @@ and the derived files
 % this macro as extension. \cs{XR@ext} is used if
 % \xpackage{hyperref} is loaded, otherwise |pdf|.
 %
+% \subsection{Module \xmodule{pageattr}}
+%
+% This module allows to recover the content of the register
+% \cs{pdfpageattr} and \cs{pdfpagesattr} in pdftex and the equivalent register
+% in luatex. There is no user command. Programmer commands are
+%
+% \begin{quote}
+% |\zref@pdfpageattr{|\meta{absolute page number}|}|
+%
+% |\zref@pdfpagesattr{|\meta{absolute page number}|}|
+% \end{quote}
 % \section{ToDo}\label{sec:todo}
 %
 % Among other things the following issues are left for future work:
@@ -6715,6 +6726,8 @@ the height difference of the two baselines is
 %     Removed no longer needed code for older lualatex versions.
 %   \item added some documentation of the abspos module.
 %   \item adapted the abspos module to the new luatex primitives.
+%   \item adapted pageattr module to the new luatex primitives.
+%   \item added short documentation for pageattr module
 %   \end{Version}
 % \end{History}
 %
