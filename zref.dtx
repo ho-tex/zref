@@ -1320,6 +1320,46 @@ and the derived files
 % The property list |savepos| contains the properties |posx|
 % and |posy|.
 %
+% \subsection{Module \xmodule{abspos}}
+% Module \xmodule{abspos} allows to get various values of the page layout. There is no user
+% command, only two internal commands:
+% \begin{quote}
+%   |\zref@absposx{|\meta{label}|}{|\meta{value}|}{|\meta{position}|}|\\
+%   |\zref@absposy{|\meta{label}|}{|\meta{value}|}{|\meta{position}|}|
+% \end{quote}
+%
+% The return value is like in the module \xmodule{savepos} a number representing a length in sp.
+% The length are measured from the bottom left of the page.
+%
+% \meta{label} is a label set with \cs{zlabel} or \cs{zsavepos} that allows to retrieve the
+% absolute page number.
+%
+% \meta{position} is for the x-command one of |left|, |right| or |center|. For the y-command
+%  it is one of |top|, |bottom|, |center|.
+%
+% The possible content of \meta{value} can be seen in the following table. Be aware that the code
+% makes some assumptions which are perhaps not always true -- for example that the left of
+% the head is identical to the left of the body.
+%
+% \medskip
+% \begin{tabular}{lll}
+%  \textbf{value} & \textbf{axis} & \textbf{comments}\\\hline
+%   media         & x             &   left=0, right=\cs{pdfpagewidth} \\
+%   paper         & x             &   left=0, right=\cs{paperwidth}\\
+%   stock         & x             &   derived from paper\\
+%   media         & y             & bottom=0, top=\cs{pdfpageheigh}\\
+%   paper         & y             & top=\cs{pdfpageheight}, bottom=top-\cs{paperheight}\\
+%   stock         & y             & top  derived from paper\\
+%   head          & x             & calculated with hoffset, horigin, etc\\
+%   head          & y             & calculated\\
+%   body          & x             & = head value\\%
+%   body          & y             & = head bottom - \cs{headsep}\\
+%   foot          & x             & = head\\
+%   foot          & y             & calculated from body bottom and \cs{footskip}\\
+%   marginpar     & x             &different on odd/even pages! \\
+%   marginpar     & y             & = body %
+% \end{tabular}
+%
 % \subsection{Module \xmodule{dotfill}}
 %
 % \begin{declcs}{zdotfill}
@@ -6666,6 +6706,7 @@ the height difference of the two baselines is
 %     pdfpagewidth, pdfpageheight for luatex to the right primitives.
 %   \item
 %     Removed no longer needed code for older lualatex versions.
+%   \item added some documentation of the abspos module.   
 %   \end{Version}
 % \end{History}
 %
