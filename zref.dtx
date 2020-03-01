@@ -5622,6 +5622,9 @@ the height difference of the two baselines is
     pdfpagewidth%
   }%
 }
+\ifluatex
+\def\ZREF@abspos@media@width{pdfpagewidth}%
+\fi
 %    \end{macrocode}
 %    \end{macro}
 %    \begin{macro}{\ZREF@abspos@media@height}
@@ -5649,6 +5652,18 @@ the height difference of the two baselines is
     \noexpand\fi
   }%
 }
+\ifluatex
+\edef\ZREF@abspos@media@height{%
+   \noexpand\ifcase\pageheight
+      \ltx@ifundefined{stockheight}{%
+        paperheight%
+      }{%
+        stockheight%
+      }%
+    \noexpand\else
+      pdfpageheight%
+    \noexpand\fi}%
+\fi
 %    \end{macrocode}
 %    \end{macro}
 %
@@ -5753,6 +5768,12 @@ the height difference of the two baselines is
     \let\ZREF@temp\ltx@zero
   \fi
 }
+\ifluatex
+ \ifpdf
+  \let\ZREF@temp\ltx@zero
+ \fi
+\fi
+
 \ifx\ZREF@temp\ltx@two
   \ifnum\mag=1000 %
     \let\ZREF@temp\ltx@one
@@ -5781,6 +5802,11 @@ the height difference of the two baselines is
     \let\ZREF@temp\ltx@zero
   \fi
 }
+\ifluatex
+  \ifpdf
+    \let\ZREF@temp\ltx@zero
+  \fi
+\fi
 \ifx\ZREF@temp\ltx@two
   \ifnum\mag=1000 %
     \let\ZREF@temp\ltx@one
