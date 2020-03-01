@@ -1,0 +1,20 @@
+\input{regression-test}
+\documentclass{article}
+\usepackage{zref-user}
+\usepackage{zref-abspos}
+\usepackage{zref-savepos}
+\usepackage{zref-pagelayout}
+\makeatletter
+\zref@addprop{savepos}{page}
+\zref@addprop{savepos}{textheight}
+\zref@addprop{savepos}{pdfvorigin}
+\zref@addprop{savepos}{pdfhorigin}
+\zref@addprop{savepos}{pdfpageheight}
+\zref@addprop{savepos}{pdfpagewidth}
+\makeatother
+
+\begin{document}
+\START \showoutput
+\LaTeX \zlistpagelayout
+\zsavepos{mypos}
+\end{document}

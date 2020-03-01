@@ -1,0 +1,78 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line ....
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line ....
+Completed box being shipped out [1]
+\vbox(633.0+0.0)x407.0
+.\hbox(0.0+0.0)x0.0
+..\write1{\zref@newlabel{thepage1}{\page{\Z@C@page }\pagevalue{\Z@C@pagevalue }\mag{\Z@C@mag }\paperwidth{\Z@C@paperwidth }\paperheight{\Z@C@paperheight }\pdfpagewidth{\Z@C@pdfpagewidth }\pdfpageheight{\Z@C@pdfpageheight }\hoffset{\Z@C@hoffset }\voffset{\Z@C@voffset }\topmargin{\Z@C@topmargin }\oddsidemargin{\Z@C@oddsidemargin }\evensidemargin{\Z@C@evensidemargin }\textwidth{\Z@C@textwidth }\textheight{\Z@C@textheight }\headheight{\Z@C@headheight }\headsep{\Z@C@headsep }\footskip{\Z@C@footskip }\marginparwidth{\Z@C@marginparwidth }\marginparsep{\Z@C@marginparsep }\columnwidth{\Z@C@columnwidth }\columnsep{\Z@C@columnsep }\outputboxwd{\Z@C@outputboxwd }\outputboxht{\Z@C@outputboxht }\outputboxdp{\Z@C@outputboxdp }}}
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
+...\write-{}
+...\glue(\topskip) 3.17
+...\hbox(6.83+2.155)x345.0, glue set 304.33597fil
+....\hbox(0.0+0.0)x15.0
+....\TU/lmr/m/n/10 L
+....\kern -3.6
+....\vbox(6.77+0.0)x5.901, glue set 1.779fil
+.....\hbox(4.991+0.0)x5.901
+......\TU/lmr/m/n/7 A
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\kern -1.49994
+....\TU/lmr/m/n/10 T
+....\kern -1.66702
+....\hbox(6.8+0.0)x6.81, shifted 2.155
+.....\TU/lmr/m/n/10 E
+....\kern -1.25
+....\TU/lmr/m/n/10 X
+....\pdfsavepos
+....\write1{\zref@newlabel{mypos}{\posx{\Z@C@posx }\posy{\Z@C@posy }\abspage{\Z@C@abspage }\page{\Z@C@page }\textheight{\Z@C@textheight }\pdfpageheight{\Z@C@pdfpageheight }\pdfpagewidth{\Z@C@pdfpagewidth }}}
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue -2.155
+...\glue 0.0 plus 1.0fil
+...\glue 0.0
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 23.34
+..\hbox(6.66+0.0)x345.0, glue set 170.0fil
+...\glue 0.0 plus 1.0fil
+...\TU/lmr/m/n/10 1
+...\glue 0.0 plus 1.0fil
+.\kern 0.0
+Package atveryend Info: Executing hook `AfterLastShipout' on input line ....
+(zref-test-pagelayout.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line ....
+Package zref-pagelayout Info: Page layout parameters:
+(zref-pagelayout)             Page 1:
+(zref-pagelayout)               mag = 1000
+(zref-pagelayout)               paperwidth = 40258437sp = 614.295pt
+(zref-pagelayout)               paperheight = 52099153sp = 794.96999pt
+(zref-pagelayout)               pdfpagewidth = 0sp = 0.0pt
+(zref-pagelayout)               pdfpageheight = 0sp = 0.0pt
+(zref-pagelayout)               hoffset = 0sp = 0.0pt
+(zref-pagelayout)               voffset = 0sp = 0.0pt
+(zref-pagelayout)               topmargin = 1048576sp = 16.0pt
+(zref-pagelayout)               oddsidemargin = 4063232sp = 62.0pt
+(zref-pagelayout)               evensidemargin = 4063232sp = 62.0pt
+(zref-pagelayout)               textwidth = 22609920sp = 345.0pt
+(zref-pagelayout)               textheight = 36044800sp = 550.0pt
+(zref-pagelayout)               headheight = 786432sp = 12.0pt
+(zref-pagelayout)               headsep = 1638400sp = 25.0pt
+(zref-pagelayout)               footskip = 1966080sp = 30.0pt
+(zref-pagelayout)               marginparwidth = 4259840sp = 65.0pt
+(zref-pagelayout)               marginparsep = 720896sp = 11.0pt
+(zref-pagelayout)               columnwidth = 22609920sp = 345.0pt
+(zref-pagelayout)               columnsep = 655360sp = 10.0pt
+(zref-pagelayout)             .
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line ....
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line ....
