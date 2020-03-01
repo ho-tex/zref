@@ -3758,61 +3758,48 @@ the height difference of the two baselines is
 \RequirePackage{iftex}[2019/11/07]%
 %    \end{macrocode}
 %
-%    \begin{macrocode}
-\ifluatex
-  \ifnum\luatexversion<39 %
-  \else
-    \begingroup
-      \escapechar=-1 %
-      \def\ZREF@temp#1{%
-        \ltx@IfUndefined{\string#1}{%
-          \let#1\ltx@undefined
-          \directlua{%
-            if tex.enableprimitives then %
-              tex.enableprimitives('', {'\string#1'})%
-            end%
-          }%
-          \ltx@ifundefined{\string#1}{%
-          }{%
-            \global#1=#1%
-            \@PackageInfoNoLine{zref-pageattr}{%
-              \string#1 enabled%
-            }%
-          }%
-        }{}%
-      }%
-      \ZREF@temp\pdfpageattr
-      \ZREF@temp\pdfpagesattr
-    \endgroup
-  \fi
-\fi
-%    \end{macrocode}
 %
 %    \begin{macrocode}
 \let\ZREF@temp=N%
-\ltx@IfUndefined{pdfpageattr}{%
+\ifluatex
+\expandafter\@firstoftwo
+\else
+\expandafter\@secondoftwo
+\fi
+{%luatex
+ \RequirePackage{zref-thepage}[2019/11/29]
+ \RequirePackage{zref-lastpage}[2019/11/29]%
+ \zref@newprop*{pdfpageattr}[]{\zref@hex{\the\pdfvariable pageattr}}%
+ \zref@addprop{thepage}{pdfpageattr}%
+ \zref@newprop*{pdfpagesattr}[]{\zref@hex{\the\pdfvariable pagesattr}}%
+ \zref@addprop{LastPage}{pdfpagesattr}%
+ \let\ZREF@temp=Y%
+}
+{%other
+ \ltx@IfUndefined{pdfpageattr}{%
   \@PackageInfoNoLine{zref-pageattr}{%
     \string\pdfpageattr\space is not available%
   }%
   \def\zref@pdfpageattr#1{}%
   \def\zref@pdfpageattr@used#1{}%
-}{%
+ }{%
   \RequirePackage{zref-thepage}[2019/11/29]%
   \zref@newprop*{pdfpageattr}[]{\zref@hex{\the\pdfpageattr}}%
   \zref@addprop{thepage}{pdfpageattr}%
   \let\ZREF@temp=Y%
-}
-\ltx@IfUndefined{pdfpagesattr}{%
+ }
+ \ltx@IfUndefined{pdfpagesattr}{%
   \@PackageInfoNoLine{zref-pageattr}{%
     \string\pdfpagesattr\space is not available%
   }%
   \def\zref@pdfpagesattr{}%
   \def\zref@pdfpagesattr@used{}%
-}{%
+ }{%
   \RequirePackage{zref-lastpage}[2019/11/29]%
   \zref@newprop*{pdfpagesattr}[]{\zref@hex{\the\pdfpagesattr}}%
   \zref@addprop{LastPage}{pdfpagesattr}%
   \let\ZREF@temp=Y%
+ }%
 }%
 %    \end{macrocode}
 %    \begin{macrocode}
@@ -3870,12 +3857,23 @@ the height difference of the two baselines is
 %    \end{macro}
 %    \begin{macro}{\ZREF@pa@AtVeryEnd}
 %    \begin{macrocode}
-\ltx@IfUndefined{pdfpageattr}{%
+\let\ZREF@temp=Y%
+\ltx@IfUndefined{pdfpageattr}{}{\let\ZREF@temp=N}
+\ifluatex \let\ZREF@temp=N \fi
+\ifx\ZREF@temp Y
+ \expandafter\@firstoftwo
+\else
+ \expandafter\@secondoftwo
+\fi
+ {%
   \def\ZREF@pa@AtVeryEnd{}%
-}{%
+ }
+ {%
   \def\ZREF@pa@AtVeryEnd{%
     \begingroup
-      \toks@{List of \ltx@backslashchar pdfpageattr:\MessageBreak}%
+      \toks@{List of \ltx@backslashchar
+             \ifluatex pdfvariable\else pdf\fi
+             pdfpageattr:\MessageBreak}%
       \count@=1 %
       \ZREF@pa@ListPage
       \edef\x{\endgroup
@@ -3889,11 +3887,13 @@ the height difference of the two baselines is
 %    \end{macro}
 %    \begin{macro}{\zref@pageattr}
 %    \begin{macrocode}
-\def\zref@pageattr#1{%
+\def\zref@pdfpageattr#1{%
   \zref@unhex{%
     \zref@extract{thepage\ZREF@number{#1}}{pdfpageattr}%
   }%
 }
+% compability, \zref@pageattr was defined in older versions
+\let\zref@pageattr\zref@pdfpageattr
 %    \end{macrocode}
 %    \end{macro}
 %    \begin{macro}{\zref@pageattr@used}
@@ -3928,8 +3928,13 @@ the height difference of the two baselines is
 %    \end{macrocode}
 %    \end{macro}
 %    \begin{macrocode}
-\ltx@IfUndefined{pdfpagesattr}{%
-}{%
+\let\ZREF@temp=Y%
+\ltx@IfUndefined{pdfpagesattr}{}{\let\ZREF@temp=N}
+\ifluatex \let\ZREF@temp=N \fi
+\ifx\ZREF@temp N
+ \expandafter\@firstofone
+\fi
+ {%
 %    \end{macrocode}
 %    \begin{macro}{\zref@pdfpagesattr}
 %    \begin{macrocode}
@@ -3950,7 +3955,9 @@ the height difference of the two baselines is
 %    \begin{macrocode}
   \ltx@LocalAppendToMacro\ZREF@pa@AtVeryEnd{%
     \@PackageInfoNoLine{zref-pageattr}{%
-      \ltx@backslashchar pdfpagesattr:\MessageBreak
+      \ltx@backslashchar
+      \ifluatex pdfvariable\else pdf\fi
+      pagesattr:\MessageBreak
       <<\zref@pdfpagesattr>>%
       \MessageBreak
     }%
