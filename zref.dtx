@@ -5820,18 +5820,20 @@ the height difference of the two baselines is
 %
 % \subsubsection{Origin}
 %
+% There doesn't seem a good reason to make these tests depend on pdf mode
+%  in current engines, so comment out the \verb|\ifpdf| tests.
 %    \begin{macro}{\ZREF@abspos@origin@x}
 %    \begin{macrocode}
 \let\ZREF@temp\ltx@two
 \ltx@IfUndefined{pdfhorigin}{}{%
-  \ifpdf
+%  \ifpdf
     \let\ZREF@temp\ltx@zero
-  \fi
+%  \fi
 }
 \ifluatex
- \ifpdf
+% \ifpdf
   \let\ZREF@temp\ltx@zero
- \fi
+% \fi
 \fi
 
 \ifx\ZREF@temp\ltx@two
@@ -5858,14 +5860,14 @@ the height difference of the two baselines is
 %    \begin{macrocode}
 \let\ZREF@temp\ltx@two
 \ltx@IfUndefined{pdfvorigin}{}{%
-  \ifpdf
+%  \ifpdf
     \let\ZREF@temp\ltx@zero
-  \fi
+%  \fi
 }
 \ifluatex
-  \ifpdf
+%  \ifpdf
     \let\ZREF@temp\ltx@zero
-  \fi
+%  \fi
 \fi
 \ifx\ZREF@temp\ltx@two
   \ifnum\mag=1000 %
@@ -6731,6 +6733,7 @@ the height difference of the two baselines is
 %   \item adapted pageattr module to the new luatex primitives.
 %   \item added short documentation for pageattr module
 %   \item use luatex command names directly in zref-savepos rather than defining pdftex compatibility names.
+%   \item allow zref-abspos to use \verb|\pdf[vh]origin| in dvi mode.
 %   \end{Version}
 % \end{History}
 %
