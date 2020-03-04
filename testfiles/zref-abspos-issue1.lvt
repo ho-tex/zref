@@ -1,0 +1,29 @@
+\input{regression-test}
+\documentclass{book} %twoside layout for different values
+\usepackage{zref-abspos}
+\newcounter{mparnum}
+\renewcommand*{\themparnum}{a:\arabic{mparnum}}
+\makeatletter
+
+\def\testabspos{%
+ \stepcounter{mparnum}\zsavepos{\themparnum}%
+ \textbf{\the\numexpr\ZREF@abspos@body@x@left{\themparnum}}}
+
+\makeatother
+
+
+
+\begin{document}\START \showoutput
+\testabspos blblbl
+
+\vspace{42\baselineskip}
+
+\testabspos blblbl\\
+\testabspos blblbl\\
+\testabspos blblbl\\
+\testabspos blblbl
+
+
+\testabspos blblbl\\
+\testabspos blblbl
+\end{document}
