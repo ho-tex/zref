@@ -3207,23 +3207,28 @@ the height difference of the two baselines is
 %    For features such as \xpackage{hyperref}'s \cs{autoref}
 %    we need the name of the counter. The property
 %    \verb|counter| is defined and added to the main property
-%    list.
+%    list. Starting with \LaTeX\ 2020-10-01 the proper can use
+%    \@currentcounter. In older formats
+%    \cs{refstepcounter} has to be patched but this can fail in some
+%    cases, see issue \#5.
 %    \begin{macrocode}
-\zref@newprop{counter}{}
-\zref@addprop\ZREF@mainlist{counter}
-%    \end{macrocode}
-%
-%    \cs{refstepcounter} is the central macro where we know
-%    which counter is responsible for the reference.
-%    \begin{macrocode}
-\AtBeginDocument{%
-  \ZREF@patch{refstepcounter}{%
-    \def\refstepcounter#1{%
-      \zref@setcurrent{counter}{#1}%
-      \ZREF@org@refstepcounter{#1}%
+\@ifl@t@r\fmtversion{2020-10-01}
+ {
+  \zref@newprop{counter}{\@currentcounter}
+  \zref@addprop\ZREF@mainlist{counter}
+ }
+ {
+  \zref@newprop{counter}{}
+  \zref@addprop\ZREF@mainlist{counter}
+  \AtBeginDocument{%
+    \ZREF@patch{refstepcounter}{%
+      \def\refstepcounter#1{%
+        \zref@setcurrent{counter}{#1}%
+        \ZREF@org@refstepcounter{#1}%
+      }%
     }%
-  }%
-}
+  }
+ }
 %    \end{macrocode}
 %    \begin{macrocode}
 %</counter>

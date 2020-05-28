@@ -1,0 +1,34 @@
+\input{regression-test}
+\documentclass{article}
+
+\makeatletter
+\@ifl@t@r\fmtversion{2020-10-01}
+ {}
+ {%
+  \def\refstepcounter#1{\stepcounter{#1}%
+    \edef\@currentcounter{#1}%
+    \protected@edef\@currentlabel
+       {\csname p@#1\expandafter\endcsname\csname the#1\endcsname}%
+    }
+  \def\fmtversion{2020-10-01}% fool zref     
+ }
+\makeatother 
+
+\usepackage{zref-counter}
+\usepackage{zref-user}
+
+\usepackage{hyperref}
+\begin{document}\START
+
+\refstepcounter{equation}\zlabel{eq1}
+
+\refstepcounter{section}
+\begin{equation}\zlabel{eq2}
+  1=1
+\end{equation}
+
+\makeatletter
+\typeout{\zref@extract{eq1}{counter}}
+\typeout{\zref@extract{eq2}{counter}}
+
+\end{document}
