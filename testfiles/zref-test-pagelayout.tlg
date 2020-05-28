@@ -35,7 +35,7 @@ Completed box being shipped out [1]
 ....\kern -1.25
 ....\OT1/cmr/m/n/10 X
 ....\pdfsavepos
-....\write1{\zref@newlabel{mypos}{\posx{\Z@C@posx }\posy{\Z@C@posy }\abspage{\Z@C@abspage }\page{\Z@C@page }\textheight{\Z@C@textheight }\pdfvorigin{\Z@C@pdfvorigin }\pdfhorigin{\Z@C@pdfhorigin }\pdfpageheight{\Z@C@pdfpageheight }\pdfpagewidth{\Z@C@pdfpagewidth }}}
+....\write1{\zref@newlabel{mypos}{\posx{\Z@C@posx }\posy{\Z@C@posy }\abspage{\Z@C@abspage }\pagevalue{\Z@C@pagevalue }\page{\Z@C@page }\textheight{\Z@C@textheight }\pdfvorigin{\Z@C@pdfvorigin }\pdfhorigin{\Z@C@pdfhorigin }\pdfpageheight{\Z@C@pdfpageheight }\pdfpagewidth{\Z@C@pdfpagewidth }}}
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
