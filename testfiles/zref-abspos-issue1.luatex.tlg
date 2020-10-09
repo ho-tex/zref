@@ -122,7 +122,6 @@ Completed box being shipped out [1]
 ..\glue(\baselineskip) 25.29494
 ..\hbox(0.0+0.0)x345.0, direction TLT
 .\kern0.0
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line ....
 Completed box being shipped out [2]
 \vbox(627.36243+0.0)x434.0, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
@@ -218,8 +217,4 @@ Completed box being shipped out [2]
 ..\glue(\baselineskip) 25.29494
 ..\hbox(0.0+0.0)x345.0, direction TLT
 .\kern0.0
-Package atveryend Info: Executing hook `AfterLastShipout' on input line ....
 (zref-abspos-issue1.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line ....
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line ....
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line ....

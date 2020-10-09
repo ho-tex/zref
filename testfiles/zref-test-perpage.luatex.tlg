@@ -178,7 +178,7 @@ Completed box being shipped out [2]
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 347.14957fil, direction TLT
 ...\write-{}
-...\write1{\@writefile{toc}{\protect \contentsline {chapter}{\protect \numberline {1}Introduction}{\thepage }\protected@file@percent }}
+...\write1{\@writefile{toc}{\protect \contentsline {chapter}{\protect \numberline {1}Introduction}{\thepage }{}\protected@file@percent }}
 ...\write1{\@writefile{lof}{\protect \addvspace {10\p@ }}}
 ...\write1{\@writefile{lot}{\protect \addvspace {10\p@ }}}
 ...\glue(\topskip) 10.0
