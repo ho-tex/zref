@@ -1756,6 +1756,7 @@ the height difference of the two baselines is
 % \subsubsection{Utilities}
 %
 %    \begin{macrocode}
+\providecommand\IfFormatAtLeastTF{\@ifl@t@r\fmtversion}
 \RequirePackage{ltxcmds}[2010/12/02]
 \RequirePackage{infwarerr}[2010/04/08]
 \RequirePackage{kvsetkeys}[2010/03/01]
@@ -3619,16 +3620,16 @@ the height difference of the two baselines is
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-\@ifundefined{ShipoutBoxHeight}
- {
-   \zref@newprop*{outputboxwd}[0pt]{\AtBeginShipoutBoxWidth}
-   \zref@newprop*{outputboxht}[0pt]{\AtBeginShipoutBoxHeight}
-   \zref@newprop*{outputboxdp}[0pt]{\AtBeginShipoutBoxDepth}
- }
+\IfFormatAtLeastTF{2020/10/01}
  {
    \zref@newprop*{outputboxwd}[0pt]{\ShipoutBoxWidth}
    \zref@newprop*{outputboxht}[0pt]{\ShipoutBoxHeight}
    \zref@newprop*{outputboxdp}[0pt]{\ShipoutBoxDepth}
+ }
+ {
+   \zref@newprop*{outputboxwd}[0pt]{\AtBeginShipoutBoxWidth}
+   \zref@newprop*{outputboxht}[0pt]{\AtBeginShipoutBoxHeight}
+   \zref@newprop*{outputboxdp}[0pt]{\AtBeginShipoutBoxDepth}
  }
 %    \end{macrocode}
 %    \begin{macrocode}
@@ -6754,7 +6755,8 @@ the height difference of the two baselines is
 %   \LaTeX version (issue 5)
 %   \end{Version}
 %   \begin{Version}{2020-07-03 v2.32}
-%   \item Changed in zref-pagelayout the names of the shipout box dimensions.
+%   \item Changed in zref-pagelayout the names of the shipout box dimensions
+%    to adapt to the new hook management.
 %   \end{Version}
 % \end{History}
 %
