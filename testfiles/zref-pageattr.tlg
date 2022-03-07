@@ -9,6 +9,7 @@ Completed box being shipped out [1]
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
@@ -28,10 +29,11 @@ Completed box being shipped out [1]
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.55556
-..\hbox(6.44444+0.0)x345.0, glue set 170.0fil
-...\glue 0.0 plus 1.0fil
-...\OT1/cmr/m/n/10 1
-...\glue 0.0 plus 1.0fil
+..\hbox(6.44444+0.0)x345.0
+...\hbox(6.44444+0.0)x345.0, glue set 170.0fil
+....\glue 0.0 plus 1.0fil
+....\OT1/cmr/m/n/10 1
+....\glue 0.0 plus 1.0fil
 .\kern 0.0
 Completed box being shipped out [1]
 \vbox(633.0+0.0)x407.0
@@ -42,6 +44,7 @@ Completed box being shipped out [1]
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 527.9436fil
@@ -57,6 +60,7 @@ Completed box being shipped out [1]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 4.5
 ...\hbox(7.5+2.5)x345.0, glue set 167.91638fil
 ....\hbox(0.0+0.0)x15.0
@@ -104,9 +108,10 @@ Completed box being shipped out [1]
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.32141
-..\hbox(6.67859+0.0)x345.0, glue set 171.11111fil
-...\glue 0.0 plus 1.0fil
-...\OT1/cmr/m/n/10 i
-...\glue 0.0 plus 1.0fil
+..\hbox(6.67859+0.0)x345.0
+...\hbox(6.67859+0.0)x345.0, glue set 171.11111fil
+....\glue 0.0 plus 1.0fil
+....\OT1/cmr/m/n/10 i
+....\glue 0.0 plus 1.0fil
 .\kern 0.0
 (zref-pageattr.aux)

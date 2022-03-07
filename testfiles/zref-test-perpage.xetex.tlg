@@ -10,11 +10,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line ....
 Completed box being shipped out [1]
 \vbox(633.0+0.0)x407.0
+.\hbox(0.0+0.0)x0.0
+..\special{pdfcolorstackinit 1 page direct (0 g 0 G)}
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 392.14478fil
@@ -26,6 +29,7 @@ Completed box being shipped out [1]
 ...\glue 50.0
 ...\glue 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 12.73328
 ...\hbox(17.26672+0.14926)x345.0, glue set 96.08107fil
 ....\hbox(0.0+0.0)x0.0
@@ -36,6 +40,7 @@ Completed box being shipped out [1]
 ...\penalty 10000
 ...\glue 40.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 3.57382
 ...\hbox(8.27692+0.21999)x345.0, glue set 246.027fil
 ....\TU/lmr/m/n/10 Wombat
@@ -78,10 +83,12 @@ Completed box being shipped out [1]
 ...\glue -2.85002
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.34
-..\hbox(6.66+0.0)x345.0, glue set 170.0fil
-...\glue 0.0 plus 1.0fil
-...\TU/lmr/m/n/10 1
-...\glue 0.0 plus 1.0fil
+..\hbox(6.66+0.0)x345.0
+...\hbox(6.66+0.0)x345.0, glue set 170.0fil
+....\glue 0.0 plus 1.0fil
+....\TU/lmr/m/n/10 1
+....\glue 0.0 plus 1.0fil
+.\kern 0.0
 Chapter 1.
 Completed box being shipped out [2]
 \vbox(633.0+0.0)x407.0
@@ -90,6 +97,7 @@ Completed box being shipped out [2]
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 347.14958fil
@@ -103,6 +111,7 @@ Completed box being shipped out [2]
 ...\glue 50.0
 ...\glue 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 10.52348
 ...\hbox(14.47652+4.02354)x345.0, glue set 121.07516fil
 ....\hbox(0.0+0.0)x0.0
@@ -115,6 +124,7 @@ Completed box being shipped out [2]
 ...\penalty 10000
 ...\glue 20.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 8.70973
 ...\hbox(17.26672+0.14926)x345.0, glue set 95.44662fil
 ....\hbox(0.0+0.0)x0.0
@@ -125,6 +135,7 @@ Completed box being shipped out [2]
 ...\penalty 10000
 ...\glue 40.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 3.57382
 ...\hbox(8.27692+0.21999)x345.0, glue set 303.567fil
 ....\TU/lmr/m/n/10 Wombat
@@ -163,8 +174,9 @@ Completed box being shipped out [2]
 ...\glue -2.85002
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.34
-..\hbox(6.66+0.0)x345.0, glue set 170.0fil
-...\glue 0.0 plus 1.0fil
-...\TU/lmr/m/n/10 2
-...\glue 0.0 plus 1.0fil
+..\hbox(6.66+0.0)x345.0
+...\hbox(6.66+0.0)x345.0, glue set 170.0fil
+....\glue 0.0 plus 1.0fil
+....\TU/lmr/m/n/10 2
+....\glue 0.0 plus 1.0fil
 (zref-test-perpage.aux)

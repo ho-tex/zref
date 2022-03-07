@@ -2,11 +2,14 @@ This is a generated file for the l3build validation system.
 Don't change this file in any respect.
 Completed box being shipped out [1]
 \vbox(633.0+0.0)x407.0
+.\hbox(0.0+0.0)x0.0
+..\special{pdfcolorstackinit 1 page direct (0 g 0 G)}
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
@@ -23,10 +26,12 @@ Completed box being shipped out [1]
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.34
-..\hbox(6.66+0.0)x345.0, glue set 170.0fil
-...\glue 0.0 plus 1.0fil
-...\TU/lmr/m/n/10 1
-...\glue 0.0 plus 1.0fil
+..\hbox(6.66+0.0)x345.0
+...\hbox(6.66+0.0)x345.0, glue set 170.0fil
+....\glue 0.0 plus 1.0fil
+....\TU/lmr/m/n/10 1
+....\glue 0.0 plus 1.0fil
+.\kern 0.0
 Completed box being shipped out [1]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
@@ -34,6 +39,7 @@ Completed box being shipped out [1]
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
@@ -49,8 +55,9 @@ Completed box being shipped out [1]
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.43
-..\hbox(6.57+0.0)x345.0, glue set 171.11fil
-...\glue 0.0 plus 1.0fil
-...\TU/lmr/m/n/10 i
-...\glue 0.0 plus 1.0fil
+..\hbox(6.57+0.0)x345.0
+...\hbox(6.57+0.0)x345.0, glue set 171.11fil
+....\glue 0.0 plus 1.0fil
+....\TU/lmr/m/n/10 i
+....\glue 0.0 plus 1.0fil
 (zref-pageattr.aux)

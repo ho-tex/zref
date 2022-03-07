@@ -15,6 +15,7 @@ Completed box being shipped out [1]
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil, direction TLT
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0, direction TLT
+....\hbox(0.0+0.0)x345.0, direction TLT
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 392.14478fil, direction TLT
@@ -26,6 +27,7 @@ Completed box being shipped out [1]
 ...\glue 50.0
 ...\glue 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 12.73328
 ...\hbox(17.26672+0.14928)x345.0, glue set 96.08107fil, direction TLT
 ....\localpar
@@ -57,6 +59,7 @@ Completed box being shipped out [1]
 ...\penalty 10000
 ...\glue 40.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 3.5738
 ...\hbox(8.27692+0.22)x345.0, glue set 246.02701fil, direction TLT
 ....\localpar
@@ -162,10 +165,11 @@ Completed box being shipped out [1]
 ...\glue -2.85002
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.34
-..\hbox(6.66+0.0)x345.0, glue set 170.0fil, direction TLT
-...\glue 0.0 plus 1.0fil
-...\TU/lmr/m/n/10 1
-...\glue 0.0 plus 1.0fil
+..\hbox(6.66+0.0)x345.0, direction TLT
+...\hbox(6.66+0.0)x345.0, glue set 170.0fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\TU/lmr/m/n/10 1
+....\glue 0.0 plus 1.0fil
 Chapter 1.
 Completed box being shipped out [2]
 \vbox(633.0+0.0)x407.0, direction TLT
@@ -174,6 +178,7 @@ Completed box being shipped out [2]
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil, direction TLT
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0, direction TLT
+....\hbox(0.0+0.0)x345.0, direction TLT
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 347.14957fil, direction TLT
@@ -187,6 +192,7 @@ Completed box being shipped out [2]
 ...\glue 50.0
 ...\glue 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 10.52348
 ...\hbox(14.47652+4.02356)x345.0, glue set 121.07516fil, direction TLT
 ....\localpar
@@ -212,6 +218,7 @@ Completed box being shipped out [2]
 ...\penalty 10000
 ...\glue 20.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 8.70972
 ...\hbox(17.26672+0.14928)x345.0, glue set 95.44661fil, direction TLT
 ....\localpar
@@ -246,6 +253,7 @@ Completed box being shipped out [2]
 ...\penalty 10000
 ...\glue 40.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 3.5738
 ...\hbox(8.27692+0.22)x345.0, glue set 303.56702fil, direction TLT
 ....\localpar
@@ -315,8 +323,9 @@ Completed box being shipped out [2]
 ...\glue -2.85002
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.34
-..\hbox(6.66+0.0)x345.0, glue set 170.0fil, direction TLT
-...\glue 0.0 plus 1.0fil
-...\TU/lmr/m/n/10 2
-...\glue 0.0 plus 1.0fil
+..\hbox(6.66+0.0)x345.0, direction TLT
+...\hbox(6.66+0.0)x345.0, glue set 170.0fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\TU/lmr/m/n/10 2
+....\glue 0.0 plus 1.0fil
 (zref-test-perpage.aux)

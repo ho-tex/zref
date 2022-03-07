@@ -15,6 +15,7 @@ Completed box being shipped out [1]
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 392.26811fil
@@ -26,6 +27,7 @@ Completed box being shipped out [1]
 ...\glue 50.0
 ...\glue 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 12.72224
 ...\hbox(17.27776+0.0)x345.0, glue set 96.08902fil
 ....\hbox(0.0+0.0)x0.0
@@ -48,6 +50,7 @@ Completed box being shipped out [1]
 ...\penalty 10000
 ...\glue 40.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 3.85997
 ...\hbox(8.14003+0.0)x345.0, glue set 246.04144fil
 ....\OT1/cmr/m/n/10 W
@@ -128,10 +131,11 @@ Completed box being shipped out [1]
 ...\glue -2.85002
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.55556
-..\hbox(6.44444+0.0)x345.0, glue set 170.0fil
-...\glue 0.0 plus 1.0fil
-...\OT1/cmr/m/n/10 1
-...\glue 0.0 plus 1.0fil
+..\hbox(6.44444+0.0)x345.0
+...\hbox(6.44444+0.0)x345.0, glue set 170.0fil
+....\glue 0.0 plus 1.0fil
+....\OT1/cmr/m/n/10 1
+....\glue 0.0 plus 1.0fil
 Chapter 1.
 Completed box being shipped out [2]
 \vbox(633.0+0.0)x407.0
@@ -140,6 +144,7 @@ Completed box being shipped out [2]
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 347.27292fil
@@ -153,6 +158,7 @@ Completed box being shipped out [2]
 ...\glue 50.0
 ...\glue 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 10.59724
 ...\hbox(14.40276+4.03276)x345.0, glue set 121.0941fil
 ....\hbox(0.0+0.0)x0.0
@@ -171,6 +177,7 @@ Completed box being shipped out [2]
 ...\penalty 10000
 ...\glue 20.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 8.68948
 ...\hbox(17.27776+0.0)x345.0, glue set 95.4843fil
 ....\hbox(0.0+0.0)x0.0
@@ -194,6 +201,7 @@ Completed box being shipped out [2]
 ...\penalty 10000
 ...\glue 40.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 3.85997
 ...\hbox(8.14003+0.0)x345.0, glue set 303.56934fil
 ....\OT1/cmr/m/n/10 W
@@ -246,8 +254,9 @@ Completed box being shipped out [2]
 ...\glue -2.85002
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 23.55556
-..\hbox(6.44444+0.0)x345.0, glue set 170.0fil
-...\glue 0.0 plus 1.0fil
-...\OT1/cmr/m/n/10 2
-...\glue 0.0 plus 1.0fil
+..\hbox(6.44444+0.0)x345.0
+...\hbox(6.44444+0.0)x345.0, glue set 170.0fil
+....\glue 0.0 plus 1.0fil
+....\OT1/cmr/m/n/10 2
+....\glue 0.0 plus 1.0fil
 (zref-test-perpage.aux)
