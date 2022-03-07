@@ -1,0 +1,256 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+(zref-perpage.sty
+Package: zref-perpage ....-..-.. v... Module perpage for zref (HO)
+(zref-base.sty
+Package: zref-base ....-..-.. v... Module base for zref (HO)
+(../ltxcmds.sty
+Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
+) (../infwarerr.sty
+Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
+) (../kvsetkeys.sty
+Package: kvsetkeys ....-..-.. v... Key value parser (HO)
+) (../kvdefinekeys.sty
+Package: kvdefinekeys ....-..-.. v... Define keys (HO)
+) (../pdftexcmds.sty
+Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
+(../iftex.sty
+Package: iftex ....-..-.. v... TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks...
+) (../etexcmds.sty
+Package: etexcmds ....-..-.. v... Avoid name clashes with e-TeX commands (HO)
+) (../auxhook.sty
+Package: auxhook ....-..-.. v... Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line ....
+Package zref Info: New property: default on input line ....
+Package zref Info: New property: page on input line ....
+) (zref-abspage.sty
+Package: zref-abspage ....-..-.. v... Module abspage for zref (HO)
+(../atbegshi-ltx.sty
+Package: atbegshi-ltx ....-..-.. v... Emulation of the original atbegshi
+package with kernel methods
+)
+\c@abspage=\count...
+Package zref Info: New property: abspage on input line ....
+)
+Package zref Info: New property: pagevalue on input line ....
+Package zref Info: New property list: perpage on input line ....
+\c@zpage=\count...
+\c@zref@unique=\count...
+) (../amstext.sty
+Package: amstext ....-..-.. v... AMS text
+(../amsgen.sty
+File: amsgen.sty ....-..-.. v... generic functions
+\@emptytoks=\toks...
+\ex@=\dimen...
+)) (../l3backend-luatex.def
+File: l3backend-luatex.def ....-..-.. L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count...
+\l__pdf_internal_box=\box...
+) (zref-test-perpage-amstext.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line ....
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line ....
+Completed box being shipped out [1]
+\vbox(633.0+0.0)x407.0, direction TLT
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0, direction TLT
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0, direction TLT
+....\hbox(0.0+0.0)x345.0, direction TLT
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 524.13068fil, direction TLT
+...\write-{}
+...\glue(\topskip) 1.72308
+...\hbox(8.27692+0.22)x345.0, glue set 288.56702fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\TU/lmr/m/n/10 W
+....\kern-0.83 (font)
+....\TU/lmr/m/n/10 o
+....\TU/lmr/m/n/10 m
+....\discretionary (penalty 50)
+.....< \TU/lmr/m/n/10 -
+.....= \kern-0.28 (font)
+....\TU/lmr/m/n/10 b
+....\TU/lmr/m/n/10 a
+....\TU/lmr/m/n/10 t
+....\write1{\zref@newlabel{zref@1}{\abspage{\Z@C@abspage }\page{\Z@C@page }\pagevalue{\Z@C@pagevalue }}}
+....\penalty 10000
+....\hbox(8.27692+0.0)x4.483, direction TLT
+.....\mathon
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(4.648+0.0)x4.483, shifted -3.62892, direction TLT
+......\TU/lmr/m/n/7 1
+.....\mathoff
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue -0.22
+...\glue 0.0 plus 1.0fil
+...\glue 9.0 plus 4.0 minus 2.0
+...\kern-3.0
+...\rule(0.4+0.0)x137.9979
+...\kern2.6
+...\hbox(6.81334+2.85002)x345.0, glue set 294.71997fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(6.81334+0.0)x14.40002, glue set 10.23402fil, direction TLT
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(6.81334+0.0)x4.166, direction TLT
+......\mathon
+......\hbox(0.0+0.0)x0.0, direction TLT
+......\hbox(3.99+0.0)x4.166, shifted -2.82333, direction TLT
+.......\TU/lmr/m/n/6 1
+......\mathoff
+....\hbox(6.65+0.0)x0.0, direction TLT
+.....\rule(6.65+0.0)x0.0
+....\TU/lmr/m/n/8 C
+....\TU/lmr/m/n/8 a
+....\TU/lmr/m/n/8 p
+....\kern-0.24 (font)
+....\TU/lmr/m/n/8 y
+....\discretionary (penalty 50)
+.....< \TU/lmr/m/n/8 -
+....\TU/lmr/m/n/8 b
+....\TU/lmr/m/n/8 a
+....\TU/lmr/m/n/8 r
+....\TU/lmr/m/n/8 a
+....\penalty 10000
+....\rule(0.0+2.85002)x0.0
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue -2.85002
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 23.34
+..\hbox(6.66+0.0)x345.0, direction TLT
+...\hbox(6.66+0.0)x345.0, glue set 170.0fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\TU/lmr/m/n/10 1
+....\glue 0.0 plus 1.0fil
+Completed box being shipped out [2]
+\vbox(633.0+0.0)x407.0, direction TLT
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0, direction TLT
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil, direction TLT
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0, direction TLT
+....\hbox(0.0+0.0)x345.0, direction TLT
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 524.13068fil, direction TLT
+...\glue(\topskip) 1.72308
+...\hbox(8.27692+0.22)x345.0, glue set 288.56702fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x15.0, direction TLT
+....\TU/lmr/m/n/10 W
+....\kern-0.83 (font)
+....\TU/lmr/m/n/10 o
+....\TU/lmr/m/n/10 m
+....\discretionary (penalty 50)
+.....< \TU/lmr/m/n/10 -
+.....= \kern-0.28 (font)
+....\TU/lmr/m/n/10 b
+....\TU/lmr/m/n/10 a
+....\TU/lmr/m/n/10 t
+....\write1{\zref@newlabel{zref@2}{\abspage{\Z@C@abspage }\page{\Z@C@page }\pagevalue{\Z@C@pagevalue }}}
+....\penalty 10000
+....\hbox(8.27692+0.0)x4.483, direction TLT
+.....\mathon
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(4.648+0.0)x4.483, shifted -3.62892, direction TLT
+......\TU/lmr/m/n/7 1
+.....\mathoff
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue -0.22
+...\glue 0.0 plus 1.0fil
+...\glue 9.0 plus 4.0 minus 2.0
+...\kern-3.0
+...\rule(0.4+0.0)x137.9979
+...\kern2.6
+...\hbox(6.81334+2.85002)x345.0, glue set 294.71997fil, direction TLT
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(6.81334+0.0)x14.40002, glue set 10.23402fil, direction TLT
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(6.81334+0.0)x4.166, direction TLT
+......\mathon
+......\hbox(0.0+0.0)x0.0, direction TLT
+......\hbox(3.99+0.0)x4.166, shifted -2.82333, direction TLT
+.......\TU/lmr/m/n/6 1
+......\mathoff
+....\hbox(6.65+0.0)x0.0, direction TLT
+.....\rule(6.65+0.0)x0.0
+....\TU/lmr/m/n/8 C
+....\TU/lmr/m/n/8 a
+....\TU/lmr/m/n/8 p
+....\kern-0.24 (font)
+....\TU/lmr/m/n/8 y
+....\discretionary (penalty 50)
+.....< \TU/lmr/m/n/8 -
+....\TU/lmr/m/n/8 b
+....\TU/lmr/m/n/8 a
+....\TU/lmr/m/n/8 r
+....\TU/lmr/m/n/8 a
+....\penalty 10000
+....\rule(0.0+2.85002)x0.0
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue -2.85002
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 23.34
+..\hbox(6.66+0.0)x345.0, direction TLT
+...\hbox(6.66+0.0)x345.0, glue set 170.0fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\TU/lmr/m/n/10 2
+....\glue 0.0 plus 1.0fil
+(zref-test-perpage-amstext.aux)

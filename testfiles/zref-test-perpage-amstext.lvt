@@ -1,0 +1,16 @@
+%% This is file `zref-test-perpage-amstext.lvt',
+\input{regression-test}
+\NeedsTeXFormat{LaTeX2e}
+\documentclass{report}
+\START \showoutput
+\usepackage{zref-perpage}
+\zmakeperpage{footnote}
+\usepackage{amstext} %https://github.com/ho-tex/zref/issues/11
+\begin{document}
+\START \showoutput
+Wombat\footnote{Capybara}
+\newpage
+Wombat\footnote{Capybara}
+\end{document}
+%%
+%% End of file `zref-test-perpage-amstext.lvt'.

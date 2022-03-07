@@ -1,0 +1,218 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+(zref-perpage.sty
+Package: zref-perpage ....-..-.. v... Module perpage for zref (HO)
+(zref-base.sty
+Package: zref-base ....-..-.. v... Module base for zref (HO)
+(../ltxcmds.sty
+Package: ltxcmds ....-..-.. v... LaTeX kernel commands for general use (HO)
+) (../infwarerr.sty
+Package: infwarerr ....-..-.. v... Providing info/warning/error messages (HO)
+) (../kvsetkeys.sty
+Package: kvsetkeys ....-..-.. v... Key value parser (HO)
+) (../kvdefinekeys.sty
+Package: kvdefinekeys ....-..-.. v... Define keys (HO)
+) (../pdftexcmds.sty
+Package: pdftexcmds ....-..-.. v... Utility functions of pdfTeX for LuaTeX (HO)
+(../iftex.sty
+Package: iftex ....-..-.. v... TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (../etexcmds.sty
+Package: etexcmds ....-..-.. v... Avoid name clashes with e-TeX commands (HO)
+) (../auxhook.sty
+Package: auxhook ....-..-.. v... Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line ....
+Package zref Info: New property: default on input line ....
+Package zref Info: New property: page on input line ....
+) (zref-abspage.sty
+Package: zref-abspage ....-..-.. v... Module abspage for zref (HO)
+(../atbegshi-ltx.sty
+Package: atbegshi-ltx ....-..-.. v... Emulation of the original atbegshi
+package with kernel methods
+)
+\c@abspage=\count...
+Package zref Info: New property: abspage on input line ....
+)
+Package zref Info: New property: pagevalue on input line ....
+Package zref Info: New property list: perpage on input line ....
+\c@zpage=\count...
+\c@zref@unique=\count...
+) (../amstext.sty
+Package: amstext ....-..-.. v... AMS text
+(../amsgen.sty
+File: amsgen.sty ....-..-.. v... generic functions
+\@emptytoks=\toks...
+\ex@=\dimen...
+)) (../l3backend-pdftex.def
+File: l3backend-pdftex.def ....-..-.. L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count...
+\l__pdf_internal_box=\box...
+) (zref-test-perpage-amstext.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line ....
+Completed box being shipped out [1]
+\vbox(633.0+0.0)x407.0
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 524.25401fil
+...\write-{}
+...\glue(\topskip) 1.85997
+...\hbox(8.14003+0.0)x345.0, glue set 288.56934fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 W
+....\kern-0.83334
+....\OT1/cmr/m/n/10 o
+....\OT1/cmr/m/n/10 m
+....\kern-0.27779
+....\OT1/cmr/m/n/10 b
+....\OT1/cmr/m/n/10 a
+....\OT1/cmr/m/n/10 t
+....\write1{\zref@newlabel{zref@1}{\abspage{\Z@C@abspage }\page{\Z@C@page }\pagevalue{\Z@C@pagevalue }}}
+....\penalty 10000
+....\hbox(8.14003+0.0)x4.48613
+.....\mathon
+.....\hbox(4.51111+0.0)x4.48613, shifted -3.62892
+......\OT1/cmr/m/n/7 1
+.....\mathoff
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 9.0 plus 4.0 minus 2.0
+...\kern -3.0
+...\rule(0.4+0.0)x137.9979
+...\kern 2.6
+...\hbox(6.68999+2.85002)x345.0, glue set 293.80342fil
+....\hbox(6.68999+0.0)x15.30023, glue set 11.13362fil
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(6.68999+0.0)x4.16661
+......\mathon
+......\hbox(3.86665+0.0)x4.16661, shifted -2.82333
+.......\OT1/cmr/m/n/6 1
+......\mathoff
+....\hbox(6.65+0.0)x0.0
+.....\rule(6.65+0.0)x0.0
+....\OT1/cmr/m/n/8 C
+....\OT1/cmr/m/n/8 a
+....\OT1/cmr/m/n/8 p
+....\kern-0.23611
+....\OT1/cmr/m/n/8 y
+....\OT1/cmr/m/n/8 b
+....\OT1/cmr/m/n/8 a
+....\OT1/cmr/m/n/8 r
+....\OT1/cmr/m/n/8 a
+....\penalty 10000
+....\rule(0.0+2.85002)x0.0
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue -2.85002
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 23.55556
+..\hbox(6.44444+0.0)x345.0
+...\hbox(6.44444+0.0)x345.0, glue set 170.0fil
+....\glue 0.0 plus 1.0fil
+....\OT1/cmr/m/n/10 1
+....\glue 0.0 plus 1.0fil
+Completed box being shipped out [2]
+\vbox(633.0+0.0)x407.0
+.\glue 16.0
+.\vbox(617.0+0.0)x345.0, shifted 62.0
+..\vbox(12.0+0.0)x345.0, glue set 12.0fil
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+0.0)x345.0
+....\hbox(0.0+0.0)x345.0
+..\glue 25.0
+..\glue(\lineskip) 0.0
+..\vbox(550.0+0.0)x345.0, glue set 524.25401fil
+...\glue(\topskip) 1.85997
+...\hbox(8.14003+0.0)x345.0, glue set 288.56934fil
+....\hbox(0.0+0.0)x15.0
+....\OT1/cmr/m/n/10 W
+....\kern-0.83334
+....\OT1/cmr/m/n/10 o
+....\OT1/cmr/m/n/10 m
+....\kern-0.27779
+....\OT1/cmr/m/n/10 b
+....\OT1/cmr/m/n/10 a
+....\OT1/cmr/m/n/10 t
+....\write1{\zref@newlabel{zref@2}{\abspage{\Z@C@abspage }\page{\Z@C@page }\pagevalue{\Z@C@pagevalue }}}
+....\penalty 10000
+....\hbox(8.14003+0.0)x4.48613
+.....\mathon
+.....\hbox(4.51111+0.0)x4.48613, shifted -3.62892
+......\OT1/cmr/m/n/7 1
+.....\mathoff
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue 0.0 plus 1.0fil
+...\glue 9.0 plus 4.0 minus 2.0
+...\kern -3.0
+...\rule(0.4+0.0)x137.9979
+...\kern 2.6
+...\hbox(6.68999+2.85002)x345.0, glue set 293.80342fil
+....\hbox(6.68999+0.0)x15.30023, glue set 11.13362fil
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(6.68999+0.0)x4.16661
+......\mathon
+......\hbox(3.86665+0.0)x4.16661, shifted -2.82333
+.......\OT1/cmr/m/n/6 1
+......\mathoff
+....\hbox(6.65+0.0)x0.0
+.....\rule(6.65+0.0)x0.0
+....\OT1/cmr/m/n/8 C
+....\OT1/cmr/m/n/8 a
+....\OT1/cmr/m/n/8 p
+....\kern-0.23611
+....\OT1/cmr/m/n/8 y
+....\OT1/cmr/m/n/8 b
+....\OT1/cmr/m/n/8 a
+....\OT1/cmr/m/n/8 r
+....\OT1/cmr/m/n/8 a
+....\penalty 10000
+....\rule(0.0+2.85002)x0.0
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue -2.85002
+...\glue 0.0 plus 0.0001fil
+..\glue(\baselineskip) 23.55556
+..\hbox(6.44444+0.0)x345.0
+...\hbox(6.44444+0.0)x345.0, glue set 170.0fil
+....\glue 0.0 plus 1.0fil
+....\OT1/cmr/m/n/10 2
+....\glue 0.0 plus 1.0fil
+(zref-test-perpage-amstext.aux)
