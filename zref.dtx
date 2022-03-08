@@ -2907,13 +2907,13 @@ the height difference of the two baselines is
 %    \begin{macro}{\zref@require@unique}
 %    Generate the counter |zref@unique| if the counter does not
 %    already exist.
+%    change 2022-08-03: The counter is no longer removed from the reset,
+%    so that the behaviour with includeonly is improved, see issue
+%    https://github.com/ho-tex/zref/issues/10
 %    \begin{macrocode}
 \ZREF@Robust\def\zref@require@unique{%
   \@ifundefined{c@zref@unique}{%
-    \begingroup
-      \let\@addtoreset\ltx@gobbletwo
       \newcounter{zref@unique}%
-    \endgroup
 %    \end{macrocode}
 %    \end{macro}
 %
@@ -2928,6 +2928,15 @@ the height difference of the two baselines is
 }
 %    \end{macrocode}
 %    \end{macro}
+% To improve the behaviour if include/includeonly is used, we round the
+% counter up at every include, see https://github.com/ho-tex/zref/issues/10
+%
+%    \begin{macrocode}
+\AddToHook
+   {include/after}
+   {\setcounter{zref@unique}
+      {\csname fp_to_int:n\endcsname{ceil(\c@zref@unique +100,-2)}}}
+%    \end{macrocode}
 %
 % \subsubsection{Utilities}
 %
