@@ -8,7 +8,7 @@ this project uses date-based 'snapshot' version identifiers.
 ## [2022-03-29]
 
 ### Fixed
- - Avoid that amstext undoes the stepcounter patch in zref-page,
+ - Avoid that amstext undoes the stepcounter patch in zref-perpage,
    https://github.com/ho-tex/zref/issues/11
  - Make the unique counter more robust when includeonly is used,
    https://github.com/ho-tex/zref/issues/10
