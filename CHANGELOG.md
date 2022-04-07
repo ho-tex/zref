@@ -5,6 +5,12 @@ All notable changes to the `zref` package since the
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 this project uses date-based 'snapshot' version identifiers.
 
+## [2022-04-07]
+
+### Fixed 
+ - use zref@unique counter in the include hook only if the module needs it
+   https://github.com/ho-tex/zref/issues/14
+ 
 ## [2022-03-29]
 
 ### Fixed

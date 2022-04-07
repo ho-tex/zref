@@ -1,0 +1,14 @@
+%% This is file `zref-gh14.tex',
+%% The original source files were:
+%%
+%% zref.dtx  (with options: `test1')
+\input{regression-test}
+\NeedsTeXFormat{LaTeX2e}
+\documentclass{article}
+\usepackage{zref}
+\begin{document}
+\START
+\include{filename}
+\end{document}
+%%
+%% End of file `zref-gh14.tex'.

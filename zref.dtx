@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: zref.dtx
-% Version: 2022-03-08 v2.33
+% Version: 2022-04-07 v2.34
 % Info: A new reference scheme for LaTeX
 %
 % Copyright (C)
@@ -112,7 +112,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: zref 2022-03-08 v2.33 A new reference scheme for LaTeX (HO)}
+\Msg{* Package: zref 2022-04-07 v2.34 A new reference scheme for LaTeX (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -124,7 +124,7 @@
 This is a generated file.
 
 Project: zref
-Version: 2022-03-08 v2.33
+Version: 2022-04-07 v2.34
 
 Copyright (C)
   2006-2012 Heiko Oberdiek
@@ -230,7 +230,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{zref.drv}%
-  [2022-03-08 v2.33 A new reference scheme for LaTeX (HO)]%
+  [2022-04-07 v2.34 A new reference scheme for LaTeX (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \setlength{\emergencystretch}{1em}
@@ -245,7 +245,7 @@ and the derived files
 % \GetFileInfo{zref.drv}
 %
 % \title{The \xpackage{zref} package}
-% \date{2022-03-08 v2.33}
+% \date{2022-04-07 v2.34}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at \url{https://github.com/ho-tex/zref/issues}}}
 %
@@ -1663,7 +1663,7 @@ the height difference of the two baselines is
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref}
-  [2022-03-08 v2.33 A new reference scheme for LaTeX (HO)]%
+  [2022-04-07 v2.34 A new reference scheme for LaTeX (HO)]%
 %    \end{macrocode}
 %
 % \subsubsection{Load basic module}
@@ -1750,7 +1750,7 @@ the height difference of the two baselines is
 %<*base>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-base}%
-  [2022-03-08 v2.33 Module base for zref (HO)]%
+  [2022-04-07 v2.34 Module base for zref (HO)]%
 %    \end{macrocode}
 %
 % \subsubsection{Utilities}
@@ -2924,22 +2924,22 @@ the height difference of the two baselines is
     \renewcommand*{\thezref@unique}{%
       zref@\number\c@zref@unique
     }%
+%    \end{macrocode}
+% To improve the behaviour if include/includeonly is used, we round the
+% counter up at every include, see https://github.com/ho-tex/zref/issues/10
+%    \begin{macrocode}
+   \IfFormatAtLeastTF{2020/10/01}
+    {%
+     \AddToHook
+       {include/after}
+       {\setcounter{zref@unique}
+         {\csname fp_to_int:n\endcsname{ceil(\c@zref@unique +100,-2)}}}
+    }{}%
   }{}%
 }
 %    \end{macrocode}
 %    \end{macro}
-% To improve the behaviour if include/includeonly is used, we round the
-% counter up at every include, see https://github.com/ho-tex/zref/issues/10
 %
-%    \begin{macrocode}
-\IfFormatAtLeastTF{2020/10/01}
- {
-  \AddToHook
-    {include/after}
-    {\setcounter{zref@unique}
-      {\csname fp_to_int:n\endcsname{ceil(\c@zref@unique +100,-2)}}}
- }{}
-%    \end{macrocode}
 %
 % \subsubsection{Utilities}
 %
@@ -3070,7 +3070,7 @@ the height difference of the two baselines is
 %<*user>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-user}%
-  [2022-03-08 v2.33 Module user for zref (HO)]%
+  [2022-04-07 v2.34 Module user for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -3161,7 +3161,7 @@ the height difference of the two baselines is
 %<*abspage>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-abspage}%
-  [2022-03-08 v2.33 Module abspage for zref (HO)]%
+  [2022-04-07 v2.34 Module abspage for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -3209,7 +3209,7 @@ the height difference of the two baselines is
 %<*counter>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-counter}%
-  [2022-03-08 v2.33 Module counter for zref (HO)]%
+  [2022-04-07 v2.34 Module counter for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -3254,7 +3254,7 @@ the height difference of the two baselines is
 %<*lastpage>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-lastpage}%
-  [2022-03-08 v2.33 Module lastpage for zref (HO)]%
+  [2022-04-07 v2.34 Module lastpage for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \RequirePackage{zref-abspage}[2019/11/29]
 \RequirePackage{atveryend}[2009/12/07]
@@ -3326,7 +3326,7 @@ the height difference of the two baselines is
 %<*thepage>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-thepage}%
-  [2022-03-08 v2.33 Module thepage for zref (HO)]%
+  [2022-04-07 v2.34 Module thepage for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -3401,7 +3401,7 @@ the height difference of the two baselines is
 %<*nextpage>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-nextpage}%
-  [2022-03-08 v2.33 Module nextpage for zref (HO)]%
+  [2022-04-07 v2.34 Module nextpage for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -3505,7 +3505,7 @@ the height difference of the two baselines is
 %<*totpages>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-totpages}%
-  [2022-03-08 v2.33 Module totpages for zref (HO)]%
+  [2022-04-07 v2.34 Module totpages for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -3547,7 +3547,7 @@ the height difference of the two baselines is
 %<*pagelayout>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-pagelayout}%
-  [2022-03-08 v2.33 Module pagelayout for zref (HO)]%
+  [2022-04-07 v2.34 Module pagelayout for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -3779,7 +3779,7 @@ the height difference of the two baselines is
 %<*pageattr>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-pageattr}%
-  [2022-03-08 v2.33 Module pageattr for zref (HO)]%
+  [2022-04-07 v2.34 Module pageattr for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -4011,7 +4011,7 @@ the height difference of the two baselines is
 %<*marks>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-marks}%
-  [2022-03-08 v2.33 Module marks for zref (HO)]%
+  [2022-04-07 v2.34 Module marks for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -4117,7 +4117,7 @@ the height difference of the two baselines is
 %<*runs>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-runs}%
-  [2022-03-08 v2.33 Module runs for zref (HO)]%
+  [2022-04-07 v2.34 Module runs for zref (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macro}{\zruns}
@@ -4149,7 +4149,7 @@ the height difference of the two baselines is
 %<*perpage>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-perpage}%
-  [2022-03-08 v2.33 Module perpage for zref (HO)]%
+  [2022-04-07 v2.34 Module perpage for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -4352,7 +4352,7 @@ the height difference of the two baselines is
 %<*titleref>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-titleref}%
-  [2022-03-08 v2.33 Module titleref for zref (HO)]%
+  [2022-04-07 v2.34 Module titleref for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -4765,7 +4765,7 @@ the height difference of the two baselines is
 %<*xr>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-xr}%
-  [2022-03-08 v2.33 Module xr for zref (HO)]%
+  [2022-04-07 v2.34 Module xr for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -5301,7 +5301,7 @@ the height difference of the two baselines is
 %<*hyperref>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-hyperref}%
-  [2022-03-08 v2.33 Module hyperref for zref (HO)]%
+  [2022-04-07 v2.34 Module hyperref for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -5331,7 +5331,7 @@ the height difference of the two baselines is
 %<*savepos>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-savepos}%
-  [2022-03-08 v2.33 Module savepos for zref (HO)]%
+  [2022-04-07 v2.34 Module savepos for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -5504,7 +5504,7 @@ the height difference of the two baselines is
 %<*abspos>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-abspos}%
-  [2022-03-08 v2.33 Module abspos for zref (HO)]%
+  [2022-04-07 v2.34 Module abspos for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -6158,7 +6158,7 @@ the height difference of the two baselines is
 %<*dotfill>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-dotfill}%
-  [2022-03-08 v2.33 Module dotfill for zref (HO)]%
+  [2022-04-07 v2.34 Module dotfill for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -6258,7 +6258,7 @@ the height difference of the two baselines is
 %<*env>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-env}%
-  [2022-03-08 v2.33 Module env for zref (HO)]%
+  [2022-04-07 v2.34 Module env for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -6796,6 +6796,9 @@ the height difference of the two baselines is
 %    https://github.com/ho-tex/zref/issues/11
 %   \item Make the unique counter more robust when includeonly is used,
 %   https://github.com/ho-tex/zref/issues/10
+%   \end{Version}
+%   \begin{Version}{2022-04-07 v2.34}
+%   \item Updated
 %   \end{Version}
 % \end{History}
 %
