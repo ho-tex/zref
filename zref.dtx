@@ -5709,16 +5709,22 @@ the height difference of the two baselines is
 %
 % \subsubsection{Media}
 %
+% Ensure that |\stockwidth| and |\stockheight| are defined
+%    \begin{macrocode}
+\@ifundefined{stockwidth}{\newdimen\stockwidth}{}
+\@ifundefined{stockheight}{\newdimen\stockheight}{}
+%    \end{macrocode}
+%
 %    \begin{macro}{\ZREF@abspos@media@width}
 %    \begin{macrocode}
 \edef\ZREF@abspos@media@width{%
   \ltx@ifundefined{pdfpagewidth}{%
     \ltx@ifundefined{mediawidth}{%
-      \ltx@ifundefined{stockwidth}{%
-        paperwidth%
-      }{%
+      \ifdim\stockwidth > \z@
         stockwidth%
-      }%
+      \else
+        paperwidth%
+      \fi
     }{%
       mediawidth%
     }%
@@ -5736,21 +5742,21 @@ the height difference of the two baselines is
 \edef\ZREF@abspos@media@height{%
   \ltx@ifundefined{pdfpageheight}{%
     \ltx@ifundefined{mediaheight}{%
-      \ltx@ifundefined{stockheight}{%
-        paperheight%
-      }{%
+      \ifdim\stockwidth > \z@
         stockheight%
-      }%
+      \else
+        paperheight%
+      \fi
     }{%
       mediaheight%
     }%
   }{%
     \noexpand\ifcase\pdfpageheight
-      \ltx@ifundefined{stockheight}{%
-        paperheight%
-      }{%
+      \ifdim\stockwidth > \z@
         stockheight%
-      }%
+      \else
+        paperheight%
+      \fi
     \noexpand\else
       pdfpageheight%
     \noexpand\fi
@@ -5759,11 +5765,11 @@ the height difference of the two baselines is
 \ifluatex
 \edef\ZREF@abspos@media@height{%
    \noexpand\ifcase\pageheight
-      \ltx@ifundefined{stockheight}{%
-        paperheight%
-      }{%
+     \ifdim\stockwidth > \z@
         stockheight%
-      }%
+     \else
+        paperheight%
+     \fi
     \noexpand\else
       pdfpageheight%
     \noexpand\fi}%
