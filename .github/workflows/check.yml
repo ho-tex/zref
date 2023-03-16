@@ -1,0 +1,31 @@
+name: Test suite
+
+on:
+- push
+- pull_request
+- workflow_dispatch
+
+jobs:
+  test-suite:
+    runs-on: ubuntu-latest
+    container:
+      image: registry.gitlab.com/islandoftex/images/texlive:latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Update texlive packages
+      run: |
+        tlmgr update --all --self
+
+    - name: Run test suite
+      run: |
+        export diffexe="git diff -a --no-index -- "
+        l3build check -q --show-log-on-error
+
+    - name: Archive failed test output
+      if: failure()
+      uses: actions/upload-artifact@v3
+      with:
+        name: zref-failed-${{ github.run_id }}
+        path: build/test*/*.diff
