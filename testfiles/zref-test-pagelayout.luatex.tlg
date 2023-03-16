@@ -7,7 +7,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 Completed box being shipped out [1]
 \vbox(633.0+0.0)x407.0, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
-..\write1{\zref@newlabel{thepage1}{\page{\Z@C@page }\pagevalue{\Z@C@pagevalue }\mag{\Z@C@mag }\paperwidth{\Z@C@paperwidth }\paperheight{\Z@C@paperheight }\pdfvorigin{\Z@C@pdfvorigin }\pdfhorigin{\Z@C@pdfhorigin }\pdfpageheight{\Z@C@pdfpageheight }\pdfpagewidth{\Z@C@pdfpagewidth }\hoffset{\Z@C@hoffset }\voffset{\Z@C@voffset }\topmargin{\Z@C@topmargin }\oddsidemargin{\Z@C@oddsidemargin }\evensidemargin{\Z@C@evensidemargin }\textwidth{\Z@C@textwidth }\textheight{\Z@C@textheight }\headheight{\Z@C@headheight }\headsep{\Z@C@headsep }\footskip{\Z@C@footskip }\marginparwidth{\Z@C@marginparwidth }\marginparsep{\Z@C@marginparsep }\columnwidth{\Z@C@columnwidth }\columnsep{\Z@C@columnsep }\outputboxwd{\Z@C@outputboxwd }\outputboxht{\Z@C@outputboxht }\outputboxdp{\Z@C@outputboxdp }}}
+..\write1{\zref@newlabel{thepage1}{\page{\Z@C@page }\pagevalue{\Z@C@pagevalue }\mag{\Z@C@mag }\paperwidth{\Z@C@paperwidth }\paperheight{\Z@C@paperheight }\stockwidth{\Z@C@stockwidth }\stockheight{\Z@C@stockheight }\pdfvorigin{\Z@C@pdfvorigin }\pdfhorigin{\Z@C@pdfhorigin }\pdfpageheight{\Z@C@pdfpageheight }\pdfpagewidth{\Z@C@pdfpagewidth }\hoffset{\Z@C@hoffset }\voffset{\Z@C@voffset }\topmargin{\Z@C@topmargin }\oddsidemargin{\Z@C@oddsidemargin }\evensidemargin{\Z@C@evensidemargin }\textwidth{\Z@C@textwidth }\textheight{\Z@C@textheight }\headheight{\Z@C@headheight }\headsep{\Z@C@headsep }\footskip{\Z@C@footskip }\marginparwidth{\Z@C@marginparwidth }\marginparsep{\Z@C@marginparsep }\columnwidth{\Z@C@columnwidth }\columnsep{\Z@C@columnsep }\outputboxwd{\Z@C@outputboxwd }\outputboxht{\Z@C@outputboxht }\outputboxdp{\Z@C@outputboxdp }}}
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0, direction TLT
 ..\vbox(12.0+0.0)x345.0, glue set 12.0fil, direction TLT
@@ -61,6 +61,8 @@ Package zref-pagelayout Info: Page layout parameters:
 (zref-pagelayout)               mag = 1000
 (zref-pagelayout)               paperwidth = 40258437sp = 614.295pt
 (zref-pagelayout)               paperheight = 52099153sp = 794.96999pt
+(zref-pagelayout)               stockwidth = 0sp = 0.0pt
+(zref-pagelayout)               stockheight = 0sp = 0.0pt
 (zref-pagelayout)               pdfpagewidth = 39158276sp = 597.50787pt
 (zref-pagelayout)               pdfpageheight = 55380990sp = 845.04684pt
 (zref-pagelayout)               pdfhorigin = 4736286sp = 72.26999pt
