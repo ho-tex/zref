@@ -1,5 +1,11 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
+-------- zref-abspage-14.aux (start) ---------
+(zref-abspage-14.aux) \relax^^M
+\providecommand\zref@newlabel[2]{}^^M
+\zref@newlabel{blub}{\default{}\page{2}\abspage{2}}^^M
+\gdef \@abspage@last{2}^^M
+-------- zref-abspage-14.aux (end) -----------
 Completed box being shipped out [1]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
@@ -12,24 +18,23 @@ Completed box being shipped out [1]
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
 ...\write-{}
-...\glue(\topskip) 3.06
-...\hbox(6.94+0.10999)x345.0, glue set 314.72fil
+...\glue(\topskip) 5.69446
+...\hbox(4.30554+0.0)x345.0, glue set 324.7222fil
 ....\hbox(0.0+0.0)x15.0
-....\TU/lmr/m/n/10 abc
+....\OT1/cmr/m/n/10 x
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
-...\glue -0.10999
 ...\glue 0.0 plus 1.0fil
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil
-..\glue(\baselineskip) 23.34
-..\hbox(6.66+0.0)x345.0
-...\hbox(6.66+0.0)x345.0, glue set 170.0fil
+..\glue(\baselineskip) 23.55556
+..\hbox(6.44444+0.0)x345.0
+...\hbox(6.44444+0.0)x345.0, glue set 170.0fil
 ....\glue 0.0 plus 1.0fil
-....\TU/lmr/m/n/10 1
+....\OT1/cmr/m/n/10 1
 ....\glue 0.0 plus 1.0fil
-Completed box being shipped out [1]
+Completed box being shipped out [2]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0
@@ -40,21 +45,25 @@ Completed box being shipped out [1]
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
-...\glue(\topskip) 3.06
-...\hbox(6.94+0.10999)x345.0, glue set 314.72fil
+...\write1{\zref@newlabel{blub}{\default{}\page{\Z@C@page }\abspage{\Z@C@abspage }}}
+...\glue(\topskip) 3.55556
+...\hbox(6.44444+0.0)x345.0, glue set 305.83325fil
 ....\hbox(0.0+0.0)x15.0
-....\TU/lmr/m/n/10 abc
+....\OT1/cmr/m/n/10 2
+....\glue 3.33333 plus 1.66666 minus 1.11111
+....\OT1/cmr/m/n/10 x
+....\OT1/cmr/m/n/10 x
+....\OT1/cmr/m/n/10 x
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
-...\glue -0.10999
 ...\glue 0.0 plus 1.0fil
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil
-..\glue(\baselineskip) 23.43
-..\hbox(6.57+0.0)x345.0
-...\hbox(6.57+0.0)x345.0, glue set 171.11fil
+..\glue(\baselineskip) 23.55556
+..\hbox(6.44444+0.0)x345.0
+...\hbox(6.44444+0.0)x345.0, glue set 170.0fil
 ....\glue 0.0 plus 1.0fil
-....\TU/lmr/m/n/10 i
+....\OT1/cmr/m/n/10 2
 ....\glue 0.0 plus 1.0fil
-(zref-pageattr.aux)
+(zref-abspage-14.aux)
