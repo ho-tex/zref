@@ -3171,28 +3171,32 @@ the height difference of the two baselines is
 %
 %    Module \xmodule{abspage} adds a new property \verb|abspage|
 %    to the \verb|main| property list for absolute page numbers.
-%    These are recorded by the help of package \xpackage{atbegshi}.
-%    \begin{macrocode}
-\RequirePackage{atbegshi}[2011/10/05]%
-%    \end{macrocode}
+%    These are recorded by the help of the standard LaTeX shipout hooks.
+%    The count used as property is the standard LaTeX counter \verb|\ReadonlyShipoutCounter|, 
+%    but we still provide also the counter \verb|abspage| for compability with older
+%    code.
 %    The counter \verb|abspage| must not go in the clear list
 %    of \verb|@ckpt| that is used to set counters in
 %    \xfile{.aux} files of included \hologo{TeX} files.
 %    \begin{macrocode}
 \begingroup
-  \let\@addtoreset\ltx@gobbletwo
-  \newcounter{abspage}%
+ \@ifundefined{c@abspage}
+  {% 
+   \let\@addtoreset\ltx@gobbletwo
+   \newcounter{abspage}%
+  }{} 
 \endgroup
 \setcounter{abspage}{0}%
-\AtBeginShipout{%
+\AddToHook{shipout/before}{%
   \stepcounter{abspage}%
 }%
-\zref@newprop*{abspage}[0]{\the\c@abspage}%
+\zref@newprop*{abspage}[0]{\the\ReadonlyShipoutCounter}%
 \zref@addprop\ZREF@mainlist{abspage}%
 %    \end{macrocode}
-%    Note that counter \verb|abspage| shows the
+%    Note that counter \verb|\ReadonlyShipoutCounter|
+%    and \verb|abspage| show the
 %    previous page during page processing. Before
-%    shipout the counter is incremented.
+%    shipout the counters are incremented.
 %    Thus the property is correctly written with
 %    deferred writing. If the counter is written
 %    using \cs{zref@wrapper@immediate}, then the number
