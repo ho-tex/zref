@@ -5,6 +5,13 @@ All notable changes to the `zref` package since the
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 this project uses date-based 'snapshot' version identifiers.
 
+## [Unreleased]
+
+### Fixed
+ - Define the abspage counter only if it is undefined
+   https://github.com/ho-tex/zref/issues/14
+ - Remove dependency from atveryend.  
+
 ## [2022-04-07]
 
 ### Fixed 
