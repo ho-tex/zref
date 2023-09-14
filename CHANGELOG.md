@@ -5,7 +5,7 @@ All notable changes to the `zref` package since the
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 this project uses date-based 'snapshot' version identifiers.
 
-## [Unreleased]
+## [2023-09-14]
 
 ### Fixed
  - Define the abspage counter only if it is undefined
