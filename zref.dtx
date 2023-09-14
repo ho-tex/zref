@@ -852,22 +852,28 @@ and the derived files
 % warnings.
 %
 % \subsection{Module \xmodule{abspage}}
-%
-% With the help of package \xpackage{atbegshi}
-% a new counter |abspage| with absolute page numbers is provided.
-% For technical and historical reasons the counter itself is zero based:
-% if you use it directly on the first page, e.g
-% with |\arabic{abspage}| you will get 0 as value. When using |\zref|
-% the first page will be page 1 as expected.
-% Also a new property |abspage| is defined and added to the
-% main property list. Thus you can reference the absolute
-% page number:
+% A new property |abspage| is defined and added to the
+% main property list. It makes use of the LaTeX count |\ReadonlyShipoutCounter|
+% to keep track of the page numbers. 
+% 
+% Thus you can reference the absolute page number:
 % \begin{quote}
 %   |Section \zref{foo} is on page \zpageref{foo}.|\\
 %   |This is page \zref[abspage]{foo}|\\
 %   |of \zref[abspage]{LastPage}.|
 % \end{quote}
 % The example also makes use of module \xmodule{lastpage}.
+% 
+% For compability also a counter |abspage| is provided
+% which is increased at shipout too. 
+% For technical and historical reasons this counter is zero based:
+% if you use it directly on the first page, e.g
+% with |\arabic{abspage}| you will get 0 as value. (When using |\zref| to retrieve
+% the |abspage| property the first page will be page 1 as expected.).
+% It must be noted that the \texttt{perpage} package also provides a |abspage| 
+% counter which is \emph{not} zero based but gives 1 on the first page if \texttt{zref-abspage} is
+% not loaded.  
+% 
 %
 % \subsection{Module \xmodule{lastpage}}
 %
