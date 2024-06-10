@@ -62,7 +62,7 @@
 %    use A4 as paper format:
 %       \PassOptionsToClass{a4paper}{article}
 %
-%    Programm calls to get the documentation (example):
+%    Program calls to get the documentation (example):
 %       pdflatex zref.dtx
 %       makeindex -s gind.ist zref.idx
 %       pdflatex zref.dtx
@@ -289,7 +289,7 @@ and the derived files
 % \section{Introduction}
 %
 % Standard \hologo{LaTeX}'s reference system with \cs{label}, \cs{ref},
-% and \cs{pageref} supports two properties, the apperance of
+% and \cs{pageref} supports two properties, the appearance of
 % the counter that is last incremented by \cs{refstepcounter} and
 % the page with the \cs{label} command.
 %
@@ -362,7 +362,7 @@ and the derived files
 % The package provides a generic \emph{interface for programmers}.
 % Commands of this interface are prefixed by \cs{zref@}.
 %
-% Option \xoption{user} enabels the \emph{user interface}.
+% Option \xoption{user} enables the \emph{user interface}.
 % Here the commands are prefixed by \cs{z} to avoid name
 % clashes with existing macros.
 %
@@ -561,7 +561,7 @@ and the derived files
 % \begin{declcs}{zref@extractdefault}\markexptwo
 %   \M{refname} \M{propname} \M{default}
 % \end{declcs}
-% This is the basic command that refernces the value of a
+% This is the basic command that references the value of a
 % property \meta{propname} for the reference \meta{refname}.
 % In case of errors such as undefined reference the \meta{default}
 % is used instead.
@@ -805,7 +805,7 @@ and the derived files
 %   \markexp\unskip    & Expandable version:\\
 %                      & \textbullet\ robust,
 %                        unless the extracted values are fragile,\\
-%                      & \textbullet\ no babel shorthand suport.\\
+%                      & \textbullet\ no babel shorthand support.\\
 %   \markexptwo\unskip & Expandable like \markexp and:\\
 %                      & \textbullet\ expandable in exact two steps.\\
 % \end{tabular}
@@ -864,7 +864,7 @@ and the derived files
 % \end{quote}
 % The example also makes use of module \xmodule{lastpage}.
 % 
-% For compability also a counter |abspage| is provided
+% For compatibility also a counter |abspage| is provided
 % which is increased at shipout too. 
 % For technical and historical reasons this counter is zero based:
 % if you use it directly on the first page, e.g
@@ -1030,7 +1030,7 @@ and the derived files
 % \begin{declcs}{znextpagesetup} \M{unknown} \M{no next}
 %   \M{next}
 % \end{declcs}
-% Acording to the case (see \cs{znextpage}) macro \cs{znextpage}
+% According to the case (see \cs{znextpage}) macro \cs{znextpage}
 % calls an internal macro with an argument. The argument is
 % either \cs{thepage} of the next page or one of \cs{zunknownnextpagename}
 % or \cs{znonextpagename}. These internal macro can be changed by
@@ -1322,7 +1322,7 @@ and the derived files
 % by |\zref@labelbylist{|\texttt{\meta{refname}}|}{savepos}|.
 % If \cs{TeXXeTstate} is detected and enabled, \cs{savepos}
 % also adds \cs{zref@savepos} at the end to support \cs{beginR}
-% where the whatits are processed in reverse order.
+% where the whatsits are processed in reverse order.
 % The property list |savepos| contains the properties |posx|
 % and |posy|.
 %
@@ -1823,7 +1823,7 @@ the height difference of the two baselines is
 %    \end{macro}
 %
 %    \begin{macro}{\ifZREF@found}
-%    The following switch is usded in list processing.
+%    The following switch is used in list processing.
 %    \begin{macrocode}
 \newif\ifZREF@found
 %    \end{macrocode}
@@ -3009,9 +3009,9 @@ the height difference of the two baselines is
 %    standard \hologo{LaTeX} uses in its references created by
 %    \cs{label}.
 %    \begin{description}
-%    \item[\texttt{default}] the apperance of the latest
+%    \item[\texttt{default}] the appearance of the latest
 %      counter that is incremented by \cs{refstepcounter}
-%    \item[\texttt{page}] the apperance of the page counter
+%    \item[\texttt{page}] the appearance of the page counter
 %    \end{description}
 %    \begin{macrocode}
 \zref@newprop{default}{\@currentlabel}
@@ -3146,7 +3146,7 @@ the height difference of the two baselines is
 %    \end{macro}
 %
 %    \begin{macro}{\zrefused}
-%    For the following expandible user macros \cs{zrefused}
+%    For the following expandable user macros \cs{zrefused}
 %    should be used to notify \hologo{LaTeX} in case of undefined
 %    references.
 %    \begin{macrocode}
@@ -3179,7 +3179,7 @@ the height difference of the two baselines is
 %    to the \verb|main| property list for absolute page numbers.
 %    These are recorded by the help of the standard LaTeX shipout hooks.
 %    The count used as property is the standard LaTeX counter \verb|\ReadonlyShipoutCounter|, 
-%    but we still provide also the counter \verb|abspage| for compability with older
+%    but we still provide also the counter \verb|abspage| for compatibility with older
 %    code.
 %    The counter \verb|abspage| must not go in the clear list
 %    of \verb|@ckpt| that is used to set counters in
@@ -3932,7 +3932,7 @@ the height difference of the two baselines is
     \zref@extract{thepage\ZREF@number{#1}}{pdfpageattr}%
   }%
 }
-% compability, \zref@pageattr was defined in older versions
+% compatibility, \zref@pageattr was defined in older versions
 \let\zref@pageattr\zref@pdfpageattr
 %    \end{macrocode}
 %    \end{macro}
@@ -4066,7 +4066,7 @@ the height difference of the two baselines is
             \MessageBreak
             in the third argument of \string\zref@marks@register.%
             \MessageBreak
-            Ignoring unkown value `\comma@entry'%
+            Ignoring unknown value `\comma@entry'%
           }%
         \else
           \zref@addprop{\kv@key}{\comma@entry\ZREF@TempName}%
@@ -4244,7 +4244,7 @@ the height difference of the two baselines is
 %    \end{macrocode}
 %
 %    \begin{macro}{\zmakeperpage}
-%    Makro \cs{zmakeperpage} resets a counter at each page
+%    Macro \cs{zmakeperpage} resets a counter at each page
 %    break. It uses the same syntax and semantics as
 %    \cs{MakePerPage} from package \xpackage{perpage} \cite{perpage}.
 %    The initial start value can be given by the optional
@@ -4423,7 +4423,7 @@ the height difference of the two baselines is
 %    The hook should not be used directly, instead we provide the
 %    macro \cs{zref@titleref@cleanup} to add stuff to the hook
 %    and prevents that a previous non-empty content is not discarded
-%    accidently.
+%    accidentally.
 %    \begin{macrocode}
 \ZREF@Robust\def\zref@titleref@cleanup#1{%
    \begingroup
@@ -4800,7 +4800,7 @@ the height difference of the two baselines is
 %    Therefore I drop the documentation for these macros here.
 %
 %    \begin{macro}{\zref@xr@ext}
-%    If the URL is not specied, then assume
+%    If the URL is not specified, then assume
 %    processed file with a guessed extension.
 %    Use the setting of \xpackage{hyperref} if available.
 %    \begin{macrocode}
@@ -4904,7 +4904,7 @@ the height difference of the two baselines is
 %    \end{macrocode}
 %    \end{macro}
 %
-%    If the \cs{include} featuer was used, there can be
+%    If the \cs{include} feature was used, there can be
 %    several \xfile{.aux} files. These files are read
 %    one after another, especially they are not recursively
 %    read in order to save read registers. Thus it can
@@ -5486,7 +5486,7 @@ the height difference of the two baselines is
 %
 %    Typically horizontal and vertical positions are used
 %    inside calculations. Therefore the extracting macros
-%    should be expandable and babel's patch is not applyable.
+%    should be expandable and babel's patch is not applicable.
 %
 %    Also it is in the responsibility of the user to marked
 %    used positions by \cs{zrefused}
@@ -6526,7 +6526,7 @@ the height difference of the two baselines is
 %   \item
 %     Module \xmodule{dotfillmin} added.
 %   \item
-%     Module \xmodule{base}: macros \cs{zref@require@uniqe}
+%     Module \xmodule{base}: macros \cs{zref@require@unique}
 %     and \cs{thezref@unique} added
 %     (used by modules \xmodule{titleref} and \xmodule{dotfillmin}).
 %   \end{Version}
