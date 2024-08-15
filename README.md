@@ -1,6 +1,6 @@
 # zref packages for LaTeX
 
-Version: 2022-04-07 v2.34
+Version: 2023-09-14 v2.35
 
 
 Package zref tries to get rid of the restriction
@@ -12,8 +12,9 @@ to the system and some applications that uses the new
 reference scheme.
 
 ## Copyright (C)
+
 * 2007, 2009-2011  Heiko Oberdiek
-* 2016-2022        Oberdiek Package Support Group
+* 2016-2023        Oberdiek Package Support Group
 
 ## License
 LATEX Project Public License, version 1.3c or later.

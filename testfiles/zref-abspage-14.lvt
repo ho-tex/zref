@@ -1,0 +1,16 @@
+\input{regression-test}
+
+\documentclass{article}
+\usepackage{perpage}
+\usepackage{zref-abspage,zref-user}
+\START
+\SHOWFILE{\jobname.aux}
+\OMIT
+\begin{document}
+\TIMO
+\showoutput
+x
+\newpage 
+\zlabel{blub} \zref[abspage]{blub}
+xxx
+\end{document}

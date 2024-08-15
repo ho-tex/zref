@@ -1,7 +1,7 @@
 % \iffalse meta-comment
 %
 % File: zref.dtx
-% Version: 2022-04-07 v2.34
+% Version: 2023-09-14 v2.35
 % Info: A new reference scheme for LaTeX
 %
 % Copyright (C)
@@ -62,7 +62,7 @@
 %    use A4 as paper format:
 %       \PassOptionsToClass{a4paper}{article}
 %
-%    Programm calls to get the documentation (example):
+%    Program calls to get the documentation (example):
 %       pdflatex zref.dtx
 %       makeindex -s gind.ist zref.idx
 %       pdflatex zref.dtx
@@ -112,7 +112,7 @@
 \input docstrip.tex
 \Msg{************************************************************************}
 \Msg{* Installation}
-\Msg{* Package: zref 2022-04-07 v2.34 A new reference scheme for LaTeX (HO)}
+\Msg{* Package: zref 2023-09-14 v2.35 A new reference scheme for LaTeX (HO)}
 \Msg{************************************************************************}
 
 \keepsilent
@@ -124,11 +124,11 @@
 This is a generated file.
 
 Project: zref
-Version: 2022-04-07 v2.34
+Version: 2023-09-14 v2.35
 
 Copyright (C)
   2006-2012 Heiko Oberdiek
-  2016-2022 Oberdiek Package Support Group
+  2016-2023 Oberdiek Package Support Group
 
 This work may be distributed and/or modified under the
 conditions of the LaTeX Project Public License, either
@@ -230,7 +230,7 @@ and the derived files
 %<*driver>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesFile{zref.drv}%
-  [2022-04-07 v2.34 A new reference scheme for LaTeX (HO)]%
+  [2023-09-14 v2.35 A new reference scheme for LaTeX (HO)]%
 \documentclass{ltxdoc}
 \usepackage{holtxdoc}[2011/11/22]
 \setlength{\emergencystretch}{1em}
@@ -245,7 +245,7 @@ and the derived files
 % \GetFileInfo{zref.drv}
 %
 % \title{The \xpackage{zref} package}
-% \date{2022-04-07 v2.34}
+% \date{2023-09-14 v2.35}
 % \author{Heiko Oberdiek\thanks
 % {Please report any issues at \url{https://github.com/ho-tex/zref/issues}}}
 %
@@ -289,7 +289,7 @@ and the derived files
 % \section{Introduction}
 %
 % Standard \hologo{LaTeX}'s reference system with \cs{label}, \cs{ref},
-% and \cs{pageref} supports two properties, the apperance of
+% and \cs{pageref} supports two properties, the appearance of
 % the counter that is last incremented by \cs{refstepcounter} and
 % the page with the \cs{label} command.
 %
@@ -362,7 +362,7 @@ and the derived files
 % The package provides a generic \emph{interface for programmers}.
 % Commands of this interface are prefixed by \cs{zref@}.
 %
-% Option \xoption{user} enabels the \emph{user interface}.
+% Option \xoption{user} enables the \emph{user interface}.
 % Here the commands are prefixed by \cs{z} to avoid name
 % clashes with existing macros.
 %
@@ -561,7 +561,7 @@ and the derived files
 % \begin{declcs}{zref@extractdefault}\markexptwo
 %   \M{refname} \M{propname} \M{default}
 % \end{declcs}
-% This is the basic command that refernces the value of a
+% This is the basic command that references the value of a
 % property \meta{propname} for the reference \meta{refname}.
 % In case of errors such as undefined reference the \meta{default}
 % is used instead.
@@ -805,7 +805,7 @@ and the derived files
 %   \markexp\unskip    & Expandable version:\\
 %                      & \textbullet\ robust,
 %                        unless the extracted values are fragile,\\
-%                      & \textbullet\ no babel shorthand suport.\\
+%                      & \textbullet\ no babel shorthand support.\\
 %   \markexptwo\unskip & Expandable like \markexp and:\\
 %                      & \textbullet\ expandable in exact two steps.\\
 % \end{tabular}
@@ -852,22 +852,28 @@ and the derived files
 % warnings.
 %
 % \subsection{Module \xmodule{abspage}}
-%
-% With the help of package \xpackage{atbegshi}
-% a new counter |abspage| with absolute page numbers is provided.
-% For technical and historical reasons the counter itself is zero based:
-% if you use it directly on the first page, e.g
-% with |\arabic{abspage}| you will get 0 as value. When using |\zref|
-% the first page will be page 1 as expected.
-% Also a new property |abspage| is defined and added to the
-% main property list. Thus you can reference the absolute
-% page number:
+% A new property |abspage| is defined and added to the
+% main property list. It makes use of the LaTeX count |\ReadonlyShipoutCounter|
+% to keep track of the page numbers. 
+% 
+% Thus you can reference the absolute page number:
 % \begin{quote}
 %   |Section \zref{foo} is on page \zpageref{foo}.|\\
 %   |This is page \zref[abspage]{foo}|\\
 %   |of \zref[abspage]{LastPage}.|
 % \end{quote}
 % The example also makes use of module \xmodule{lastpage}.
+% 
+% For compatibility also a counter |abspage| is provided
+% which is increased at shipout too. 
+% For technical and historical reasons this counter is zero based:
+% if you use it directly on the first page, e.g
+% with |\arabic{abspage}| you will get 0 as value. (When using |\zref| to retrieve
+% the |abspage| property the first page will be page 1 as expected.).
+% It must be noted that the \texttt{perpage} package also provides a |abspage| 
+% counter which is \emph{not} zero based but gives 1 on the first page if \texttt{zref-abspage} is
+% not loaded or loaded after \texttt{perpage}. 
+% 
 %
 % \subsection{Module \xmodule{lastpage}}
 %
@@ -1024,7 +1030,7 @@ and the derived files
 % \begin{declcs}{znextpagesetup} \M{unknown} \M{no next}
 %   \M{next}
 % \end{declcs}
-% Acording to the case (see \cs{znextpage}) macro \cs{znextpage}
+% According to the case (see \cs{znextpage}) macro \cs{znextpage}
 % calls an internal macro with an argument. The argument is
 % either \cs{thepage} of the next page or one of \cs{zunknownnextpagename}
 % or \cs{znonextpagename}. These internal macro can be changed by
@@ -1663,7 +1669,7 @@ the height difference of the two baselines is
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref}
-  [2022-04-07 v2.34 A new reference scheme for LaTeX (HO)]%
+  [2023-09-14 v2.35 A new reference scheme for LaTeX (HO)]%
 %    \end{macrocode}
 %
 % \subsubsection{Load basic module}
@@ -1750,7 +1756,7 @@ the height difference of the two baselines is
 %<*base>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-base}%
-  [2022-04-07 v2.34 Module base for zref (HO)]%
+  [2023-09-14 v2.35 Module base for zref (HO)]%
 %    \end{macrocode}
 %
 % \subsubsection{Utilities}
@@ -1817,7 +1823,7 @@ the height difference of the two baselines is
 %    \end{macro}
 %
 %    \begin{macro}{\ifZREF@found}
-%    The following switch is usded in list processing.
+%    The following switch is used in list processing.
 %    \begin{macrocode}
 \newif\ifZREF@found
 %    \end{macrocode}
@@ -3003,9 +3009,9 @@ the height difference of the two baselines is
 %    standard \hologo{LaTeX} uses in its references created by
 %    \cs{label}.
 %    \begin{description}
-%    \item[\texttt{default}] the apperance of the latest
+%    \item[\texttt{default}] the appearance of the latest
 %      counter that is incremented by \cs{refstepcounter}
-%    \item[\texttt{page}] the apperance of the page counter
+%    \item[\texttt{page}] the appearance of the page counter
 %    \end{description}
 %    \begin{macrocode}
 \zref@newprop{default}{\@currentlabel}
@@ -3070,7 +3076,7 @@ the height difference of the two baselines is
 %<*user>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-user}%
-  [2022-04-07 v2.34 Module user for zref (HO)]%
+  [2023-09-14 v2.35 Module user for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -3140,7 +3146,7 @@ the height difference of the two baselines is
 %    \end{macro}
 %
 %    \begin{macro}{\zrefused}
-%    For the following expandible user macros \cs{zrefused}
+%    For the following expandable user macros \cs{zrefused}
 %    should be used to notify \hologo{LaTeX} in case of undefined
 %    references.
 %    \begin{macrocode}
@@ -3161,7 +3167,7 @@ the height difference of the two baselines is
 %<*abspage>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-abspage}%
-  [2022-04-07 v2.34 Module abspage for zref (HO)]%
+  [2023-09-14 v2.35 Module abspage for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -3171,28 +3177,32 @@ the height difference of the two baselines is
 %
 %    Module \xmodule{abspage} adds a new property \verb|abspage|
 %    to the \verb|main| property list for absolute page numbers.
-%    These are recorded by the help of package \xpackage{atbegshi}.
-%    \begin{macrocode}
-\RequirePackage{atbegshi}[2011/10/05]%
-%    \end{macrocode}
+%    These are recorded by the help of the standard LaTeX shipout hooks.
+%    The count used as property is the standard LaTeX counter \verb|\ReadonlyShipoutCounter|, 
+%    but we still provide also the counter \verb|abspage| for compatibility with older
+%    code.
 %    The counter \verb|abspage| must not go in the clear list
 %    of \verb|@ckpt| that is used to set counters in
 %    \xfile{.aux} files of included \hologo{TeX} files.
 %    \begin{macrocode}
 \begingroup
-  \let\@addtoreset\ltx@gobbletwo
-  \newcounter{abspage}%
+ \@ifundefined{c@abspage}
+  {% 
+   \let\@addtoreset\ltx@gobbletwo
+   \newcounter{abspage}%
+  }{} 
 \endgroup
 \setcounter{abspage}{0}%
-\AtBeginShipout{%
+\AddToHook{shipout/before}{%
   \stepcounter{abspage}%
 }%
-\zref@newprop*{abspage}[0]{\the\c@abspage}%
+\zref@newprop*{abspage}[0]{\the\ReadonlyShipoutCounter}%
 \zref@addprop\ZREF@mainlist{abspage}%
 %    \end{macrocode}
-%    Note that counter \verb|abspage| shows the
+%    Note that counter \verb|\ReadonlyShipoutCounter|
+%    and \verb|abspage| show the
 %    previous page during page processing. Before
-%    shipout the counter is incremented.
+%    shipout the counters are incremented.
 %    Thus the property is correctly written with
 %    deferred writing. If the counter is written
 %    using \cs{zref@wrapper@immediate}, then the number
@@ -3209,7 +3219,7 @@ the height difference of the two baselines is
 %<*counter>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-counter}%
-  [2022-04-07 v2.34 Module counter for zref (HO)]%
+  [2023-09-14 v2.35 Module counter for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -3254,10 +3264,9 @@ the height difference of the two baselines is
 %<*lastpage>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-lastpage}%
-  [2022-04-07 v2.34 Module lastpage for zref (HO)]%
+  [2023-09-14 v2.35 Module lastpage for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \RequirePackage{zref-abspage}[2019/11/29]
-\RequirePackage{atveryend}[2009/12/07]
 \ifx\ZREF@base@ok Y%
 \else
   \expandafter\endinput
@@ -3272,7 +3281,7 @@ the height difference of the two baselines is
 %    the main property list are used.
 %    \begin{macrocode}
 \zref@newlist{LastPage}
-\AfterLastShipout{%
+\AddToHook {enddocument/afterlastpage}{%
   \if@filesw
     \begingroup
       \advance\c@page\m@ne
@@ -3326,7 +3335,7 @@ the height difference of the two baselines is
 %<*thepage>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-thepage}%
-  [2022-04-07 v2.34 Module thepage for zref (HO)]%
+  [2023-09-14 v2.35 Module thepage for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -3350,7 +3359,7 @@ the height difference of the two baselines is
 %    \end{macro}
 %    \begin{macrocode}
 \zref@addprop{thepage}{pagevalue}
-\AtBeginShipout{%
+\AddToHook{shipout/before}{%
   \AtBeginShipoutAddToBox{%
     \zref@thepage@atbegshi@hook
     \zref@labelbylist{thepage\the\value{abspage}}{thepage}%
@@ -3401,7 +3410,7 @@ the height difference of the two baselines is
 %<*nextpage>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-nextpage}%
-  [2022-04-07 v2.34 Module nextpage for zref (HO)]%
+  [2023-09-14 v2.35 Module nextpage for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -3505,7 +3514,7 @@ the height difference of the two baselines is
 %<*totpages>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-totpages}%
-  [2022-04-07 v2.34 Module totpages for zref (HO)]%
+  [2023-09-14 v2.35 Module totpages for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -3547,7 +3556,7 @@ the height difference of the two baselines is
 %<*pagelayout>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-pagelayout}%
-  [2022-04-07 v2.34 Module pagelayout for zref (HO)]%
+  [2023-09-14 v2.35 Module pagelayout for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -3558,7 +3567,6 @@ the height difference of the two baselines is
 %    \begin{macrocode}
 \RequirePackage{zref-thepage}[2019/11/29]
 \RequirePackage{iftex}[2019/11/07]%
-\RequirePackage{atveryend}[2010/03/24]
 %    \end{macrocode}
 %
 %
@@ -3675,7 +3683,7 @@ the height difference of the two baselines is
         \fi
       }%
     }{}%
-    \AtVeryEndDocument{\ZREF@pl@AtVeryEnd}%
+    \AddToHook{enddocument/afteraux}{\ZREF@pl@AtVeryEnd}%
   \fi
 }
 %    \end{macrocode}
@@ -3763,7 +3771,7 @@ the height difference of the two baselines is
 %    \end{macrocode}
 %    \end{macro}
 %    \begin{macrocode}
-\AfterLastShipout{%
+\AddToHook {enddocument/afterlastpage}{%
   \ZREF@pl@AfterLastShipout
 }
 %    \end{macrocode}
@@ -3779,7 +3787,7 @@ the height difference of the two baselines is
 %<*pageattr>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-pageattr}%
-  [2022-04-07 v2.34 Module pageattr for zref (HO)]%
+  [2023-09-14 v2.35 Module pageattr for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -3842,7 +3850,6 @@ the height difference of the two baselines is
 %    \end{macrocode}
 %    \begin{macrocode}
 \RequirePackage{zref-abspage}[2019/11/29]
-\RequirePackage{atveryend}[2010/03/24]
 \RequirePackage{pdftexcmds}[2010/04/01]
 \let\ZREF@temp=Y%
 \ltx@IfUndefined{pdf@escapehex}{\let\ZREF@temp=N}{}
@@ -3883,7 +3890,7 @@ the height difference of the two baselines is
         \fi
       }%
     }{}%
-    \AtVeryEndDocument{\ZREF@pa@AtVeryEnd}%
+    \AddToHook{enddocument/afteraux}{\ZREF@pa@AtVeryEnd}%
   \fi
 }
 %    \end{macrocode}
@@ -3925,7 +3932,7 @@ the height difference of the two baselines is
     \zref@extract{thepage\ZREF@number{#1}}{pdfpageattr}%
   }%
 }
-% compability, \zref@pageattr was defined in older versions
+% compatibility, \zref@pageattr was defined in older versions
 \let\zref@pageattr\zref@pdfpageattr
 %    \end{macrocode}
 %    \end{macro}
@@ -3996,7 +4003,7 @@ the height difference of the two baselines is
     }%
   }%
 }
-\AfterLastShipout{%
+\AddToHook {enddocument/afterlastpage}{%
   \ZREF@pa@AfterLastShipout
 }
 %    \end{macrocode}
@@ -4011,7 +4018,7 @@ the height difference of the two baselines is
 %<*marks>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-marks}%
-  [2022-04-07 v2.34 Module marks for zref (HO)]%
+  [2023-09-14 v2.35 Module marks for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -4059,7 +4066,7 @@ the height difference of the two baselines is
             \MessageBreak
             in the third argument of \string\zref@marks@register.%
             \MessageBreak
-            Ignoring unkown value `\comma@entry'%
+            Ignoring unknown value `\comma@entry'%
           }%
         \else
           \zref@addprop{\kv@key}{\comma@entry\ZREF@TempName}%
@@ -4117,7 +4124,7 @@ the height difference of the two baselines is
 %<*runs>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-runs}%
-  [2022-04-07 v2.34 Module runs for zref (HO)]%
+  [2023-09-14 v2.35 Module runs for zref (HO)]%
 %    \end{macrocode}
 %
 %    \begin{macro}{\zruns}
@@ -4149,7 +4156,7 @@ the height difference of the two baselines is
 %<*perpage>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-perpage}%
-  [2022-04-07 v2.34 Module perpage for zref (HO)]%
+  [2023-09-14 v2.35 Module perpage for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -4237,7 +4244,7 @@ the height difference of the two baselines is
 %    \end{macrocode}
 %
 %    \begin{macro}{\zmakeperpage}
-%    Makro \cs{zmakeperpage} resets a counter at each page
+%    Macro \cs{zmakeperpage} resets a counter at each page
 %    break. It uses the same syntax and semantics as
 %    \cs{MakePerPage} from package \xpackage{perpage} \cite{perpage}.
 %    The initial start value can be given by the optional
@@ -4352,7 +4359,7 @@ the height difference of the two baselines is
 %<*titleref>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-titleref}%
-  [2022-04-07 v2.34 Module titleref for zref (HO)]%
+  [2023-09-14 v2.35 Module titleref for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -4416,7 +4423,7 @@ the height difference of the two baselines is
 %    The hook should not be used directly, instead we provide the
 %    macro \cs{zref@titleref@cleanup} to add stuff to the hook
 %    and prevents that a previous non-empty content is not discarded
-%    accidently.
+%    accidentally.
 %    \begin{macrocode}
 \ZREF@Robust\def\zref@titleref@cleanup#1{%
    \begingroup
@@ -4765,7 +4772,7 @@ the height difference of the two baselines is
 %<*xr>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-xr}%
-  [2022-04-07 v2.34 Module xr for zref (HO)]%
+  [2023-09-14 v2.35 Module xr for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -4793,7 +4800,7 @@ the height difference of the two baselines is
 %    Therefore I drop the documentation for these macros here.
 %
 %    \begin{macro}{\zref@xr@ext}
-%    If the URL is not specied, then assume
+%    If the URL is not specified, then assume
 %    processed file with a guessed extension.
 %    Use the setting of \xpackage{hyperref} if available.
 %    \begin{macrocode}
@@ -4897,7 +4904,7 @@ the height difference of the two baselines is
 %    \end{macrocode}
 %    \end{macro}
 %
-%    If the \cs{include} featuer was used, there can be
+%    If the \cs{include} feature was used, there can be
 %    several \xfile{.aux} files. These files are read
 %    one after another, especially they are not recursively
 %    read in order to save read registers. Thus it can
@@ -5301,7 +5308,7 @@ the height difference of the two baselines is
 %<*hyperref>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-hyperref}%
-  [2022-04-07 v2.34 Module hyperref for zref (HO)]%
+  [2023-09-14 v2.35 Module hyperref for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -5332,7 +5339,7 @@ the height difference of the two baselines is
 %<*savepos>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-savepos}%
-  [2022-04-07 v2.34 Module savepos for zref (HO)]%
+  [2023-09-14 v2.35 Module savepos for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -5431,7 +5438,7 @@ the height difference of the two baselines is
 %
 %    Typically horizontal and vertical positions are used
 %    inside calculations. Therefore the extracting macros
-%    should be expandable and babel's patch is not applyable.
+%    should be expandable and babel's patch is not applicable.
 %
 %    Also it is in the responsibility of the user to marked
 %    used positions by \cs{zrefused}
@@ -5456,7 +5463,7 @@ the height difference of the two baselines is
 %<*abspos>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-abspos}%
-  [2022-04-07 v2.34 Module abspos for zref (HO)]%
+  [2023-09-14 v2.35 Module abspos for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -6100,7 +6107,7 @@ the height difference of the two baselines is
 %<*dotfill>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-dotfill}%
-  [2022-04-07 v2.34 Module dotfill for zref (HO)]%
+  [2023-09-14 v2.35 Module dotfill for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -6200,7 +6207,7 @@ the height difference of the two baselines is
 %<*env>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{zref-env}%
-  [2022-04-07 v2.34 Module env for zref (HO)]%
+  [2023-09-14 v2.35 Module env for zref (HO)]%
 \RequirePackage{zref-base}[2019/11/29]
 \ifx\ZREF@base@ok Y%
 \else
@@ -6455,7 +6462,7 @@ the height difference of the two baselines is
 %   \item
 %     Module \xmodule{dotfillmin} added.
 %   \item
-%     Module \xmodule{base}: macros \cs{zref@require@uniqe}
+%     Module \xmodule{base}: macros \cs{zref@require@unique}
 %     and \cs{thezref@unique} added
 %     (used by modules \xmodule{titleref} and \xmodule{dotfillmin}).
 %   \end{Version}
@@ -6740,8 +6747,14 @@ the height difference of the two baselines is
 %   https://github.com/ho-tex/zref/issues/10
 %   \end{Version}
 %   \begin{Version}{2022-04-07 v2.34}
-%   \item Updated
+%   \item use the \texttt{zref@unique} counter in the include hook only if the module needs it
+%    https://github.com/ho-tex/zref/issues/14
 %   \end{Version}
+%   \begin{Version}{2023-09-14 v.2.35}
+%   \item Define the abspage counter only if it is undefined
+%    https://github.com/ho-tex/zref/issues/14
+%   \item Remove dependency from atveryend.
+%   \end{Version} 
 % \end{History}
 %
 % \PrintIndex
