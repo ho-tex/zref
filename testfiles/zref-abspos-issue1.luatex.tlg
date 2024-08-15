@@ -3,7 +3,7 @@ Don't change this file in any respect.
 Completed box being shipped out [1]
 \vbox(627.36243+0.0)x380.0, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
-..\write1{\zref@newlabel{thepage1}{\page{\Z@C@page }\pagevalue{\Z@C@pagevalue }\mag{\Z@C@mag }\paperwidth{\Z@C@paperwidth }\paperheight{\Z@C@paperheight }\pdfvorigin{\Z@C@pdfvorigin }\pdfhorigin{\Z@C@pdfhorigin }\pdfpageheight{\Z@C@pdfpageheight }\pdfpagewidth{\Z@C@pdfpagewidth }\hoffset{\Z@C@hoffset }\voffset{\Z@C@voffset }\topmargin{\Z@C@topmargin }\oddsidemargin{\Z@C@oddsidemargin }\evensidemargin{\Z@C@evensidemargin }\textwidth{\Z@C@textwidth }\textheight{\Z@C@textheight }\headheight{\Z@C@headheight }\headsep{\Z@C@headsep }\footskip{\Z@C@footskip }\marginparwidth{\Z@C@marginparwidth }\marginparsep{\Z@C@marginparsep }\columnwidth{\Z@C@columnwidth }\columnsep{\Z@C@columnsep }\outputboxwd{\Z@C@outputboxwd }\outputboxht{\Z@C@outputboxht }\outputboxdp{\Z@C@outputboxdp }}}
+..\write1{\zref@newlabel{thepage1}{\page{\Z@C@page }\pagevalue{\Z@C@pagevalue }\mag{\Z@C@mag }\paperwidth{\Z@C@paperwidth }\paperheight{\Z@C@paperheight }\stockwidth{\Z@C@stockwidth }\stockheight{\Z@C@stockheight }\pdfvorigin{\Z@C@pdfvorigin }\pdfhorigin{\Z@C@pdfhorigin }\pdfpageheight{\Z@C@pdfpageheight }\pdfpagewidth{\Z@C@pdfpagewidth }\hoffset{\Z@C@hoffset }\voffset{\Z@C@voffset }\topmargin{\Z@C@topmargin }\oddsidemargin{\Z@C@oddsidemargin }\evensidemargin{\Z@C@evensidemargin }\textwidth{\Z@C@textwidth }\textheight{\Z@C@textheight }\headheight{\Z@C@headheight }\headsep{\Z@C@headsep }\footskip{\Z@C@footskip }\marginparwidth{\Z@C@marginparwidth }\marginparsep{\Z@C@marginparsep }\columnwidth{\Z@C@columnwidth }\columnsep{\Z@C@columnsep }\outputboxwd{\Z@C@outputboxwd }\outputboxht{\Z@C@outputboxht }\outputboxdp{\Z@C@outputboxdp }}}
 .\glue 22.0
 .\vbox(605.36243+0.0)x345.0, shifted 35.0, direction TLT
 ..\vbox(12.0+0.0)x345.0, glue set 5.34fil, direction TLT
@@ -18,6 +18,7 @@ Completed box being shipped out [1]
 ...\write-{}
 ...\savepos
 ...\write1{\zref@newlabel{a:1}{\posx{\Z@C@posx }\posy{\Z@C@posy }\abspage{\Z@C@abspage }\pagevalue{\Z@C@pagevalue }}}
+...\savepos
 ...\glue(\topskip) 3.06
 ...\hbox(6.94+0.11)x345.0, glue set 264.73001fil, direction TLT
 ....\localpar
@@ -47,6 +48,7 @@ Completed box being shipped out [1]
 ...\glue 0.0
 ...\savepos
 ...\write1{\zref@newlabel{a:2}{\posx{\Z@C@posx }\posy{\Z@C@posy }\abspage{\Z@C@abspage }\pagevalue{\Z@C@pagevalue }}}
+...\savepos
 ...\glue(\parskip) 0.0 plus 1.0
 ...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 4.95
@@ -80,6 +82,7 @@ Completed box being shipped out [1]
 ...\hbox(6.94+0.11)x345.0, glue set 279.73001fil, direction TLT
 ....\savepos
 ....\write1{\zref@newlabel{a:3}{\posx{\Z@C@posx }\posy{\Z@C@posy }\abspage{\Z@C@abspage }\pagevalue{\Z@C@pagevalue }}}
+....\savepos
 ....\TU/lmr/bx/n/10 7
 ....\TU/lmr/bx/n/10 0
 ....\TU/lmr/bx/n/10 3
@@ -102,6 +105,7 @@ Completed box being shipped out [1]
 ...\hbox(6.94+0.11)x345.0, glue set 279.73001fil, direction TLT
 ....\savepos
 ....\write1{\zref@newlabel{a:4}{\posx{\Z@C@posx }\posy{\Z@C@posy }\abspage{\Z@C@abspage }\pagevalue{\Z@C@pagevalue }}}
+....\savepos
 ....\TU/lmr/bx/n/10 7
 ....\TU/lmr/bx/n/10 0
 ....\TU/lmr/bx/n/10 3
@@ -128,7 +132,7 @@ Completed box being shipped out [1]
 Completed box being shipped out [2]
 \vbox(627.36243+0.0)x434.0, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
-..\write1{\zref@newlabel{thepage2}{\page{\Z@C@page }\pagevalue{\Z@C@pagevalue }\mag{\Z@C@mag }\paperwidth{\Z@C@paperwidth }\paperheight{\Z@C@paperheight }\pdfvorigin{\Z@C@pdfvorigin }\pdfhorigin{\Z@C@pdfhorigin }\pdfpageheight{\Z@C@pdfpageheight }\pdfpagewidth{\Z@C@pdfpagewidth }\hoffset{\Z@C@hoffset }\voffset{\Z@C@voffset }\topmargin{\Z@C@topmargin }\oddsidemargin{\Z@C@oddsidemargin }\evensidemargin{\Z@C@evensidemargin }\textwidth{\Z@C@textwidth }\textheight{\Z@C@textheight }\headheight{\Z@C@headheight }\headsep{\Z@C@headsep }\footskip{\Z@C@footskip }\marginparwidth{\Z@C@marginparwidth }\marginparsep{\Z@C@marginparsep }\columnwidth{\Z@C@columnwidth }\columnsep{\Z@C@columnsep }\outputboxwd{\Z@C@outputboxwd }\outputboxht{\Z@C@outputboxht }\outputboxdp{\Z@C@outputboxdp }}}
+..\write1{\zref@newlabel{thepage2}{\page{\Z@C@page }\pagevalue{\Z@C@pagevalue }\mag{\Z@C@mag }\paperwidth{\Z@C@paperwidth }\paperheight{\Z@C@paperheight }\stockwidth{\Z@C@stockwidth }\stockheight{\Z@C@stockheight }\pdfvorigin{\Z@C@pdfvorigin }\pdfhorigin{\Z@C@pdfhorigin }\pdfpageheight{\Z@C@pdfpageheight }\pdfpagewidth{\Z@C@pdfpagewidth }\hoffset{\Z@C@hoffset }\voffset{\Z@C@voffset }\topmargin{\Z@C@topmargin }\oddsidemargin{\Z@C@oddsidemargin }\evensidemargin{\Z@C@evensidemargin }\textwidth{\Z@C@textwidth }\textheight{\Z@C@textheight }\headheight{\Z@C@headheight }\headsep{\Z@C@headsep }\footskip{\Z@C@footskip }\marginparwidth{\Z@C@marginparwidth }\marginparsep{\Z@C@marginparsep }\columnwidth{\Z@C@columnwidth }\columnsep{\Z@C@columnsep }\outputboxwd{\Z@C@outputboxwd }\outputboxht{\Z@C@outputboxht }\outputboxdp{\Z@C@outputboxdp }}}
 .\glue 22.0
 .\vbox(605.36243+0.0)x345.0, shifted 89.0, direction TLT
 ..\vbox(12.0+0.0)x345.0, glue set 5.34fil, direction TLT
@@ -144,6 +148,7 @@ Completed box being shipped out [2]
 ...\hbox(6.94+0.11)x345.0, glue set 273.98001fil, direction TLT
 ....\savepos
 ....\write1{\zref@newlabel{a:5}{\posx{\Z@C@posx }\posy{\Z@C@posy }\abspage{\Z@C@abspage }\pagevalue{\Z@C@pagevalue }}}
+....\savepos
 ....\TU/lmr/bx/n/10 1
 ....\TU/lmr/bx/n/10 0
 ....\TU/lmr/bx/n/10 5
@@ -164,6 +169,7 @@ Completed box being shipped out [2]
 ....\glue(\rightskip) 0.0
 ...\savepos
 ...\write1{\zref@newlabel{a:6}{\posx{\Z@C@posx }\posy{\Z@C@posy }\abspage{\Z@C@abspage }\pagevalue{\Z@C@pagevalue }}}
+...\savepos
 ...\glue(\parskip) 0.0 plus 1.0
 ...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 4.95
@@ -198,6 +204,7 @@ Completed box being shipped out [2]
 ...\hbox(6.94+0.11)x345.0, glue set 273.98001fil, direction TLT
 ....\savepos
 ....\write1{\zref@newlabel{a:7}{\posx{\Z@C@posx }\posy{\Z@C@posy }\abspage{\Z@C@abspage }\pagevalue{\Z@C@pagevalue }}}
+....\savepos
 ....\TU/lmr/bx/n/10 1
 ....\TU/lmr/bx/n/10 0
 ....\TU/lmr/bx/n/10 5

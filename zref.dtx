@@ -1259,9 +1259,9 @@ and the derived files
 %
 % \subsection{Module \xmodule{savepos}}
 %
-% This option supports a feature that \pdfTeX\ provides
+% This option supports a feature that all engines nowadays provide:
 % (and \hologo{XeTeX}).
-% \pdfTeX\ is able to tell the current position on the
+% They are able to tell the current position on the
 % page. The page position is not instantly known. First the
 % page must be constructed by \hologo{TeX}'s asynchronous output
 % routine. Thus the time where the position is known is
@@ -1304,18 +1304,18 @@ and the derived files
 % mark the reference as used by \cs{zrefused}.
 %
 % This module uses \pdfTeX's \cs{pdfsavepos}, \cs{pdflastxpos},
-% and \cs{pdflastypos}. They are available in PDF mode and
-% since version 1.40.0 also in DVI mode.
+% and \cs{pdflastypos} and similar commands in the other engines. 
+% They are available in PDF mode and
+% since \pdfTeX\ version 1.40.0 also in DVI mode.
 %
 % \begin{declcs}{zref@savepos}
 % \end{declcs}
 % Macro \cs{zref@savepos} performs the first part of \cs{zsavepos}
-% by calling \cs{pdfsavepos} (if \xext{aux} files are writable).
+% by calling \cs{\tex_savepos:D} (if \xext{aux} files are writable).
 %
 % Thus \cs{zsavepos} is basically \cs{zref@savepos} followed
 % by |\zref@labelbylist{|\texttt{\meta{refname}}|}{savepos}|.
-% If \cs{TeXXeTstate} is detected and enabled, \cs{savepos}
-% also adds \cs{zref@savepos} at the end to support \cs{beginR}
+% \cs{savepos} also adds \cs{zref@savepos} at the end to support \cs{beginR}
 % where the whatits are processed in reverse order.
 % The property list |savepos| contains the properties |posx|
 % and |posy|.
@@ -1596,7 +1596,7 @@ Text.
 
 %    \end{macrocode}
 %
-%    Here an example follows that makes use of \pdfTeX's ``savepos''
+%    Here an example follows that makes use of the ``savepos''
 %    feature. The position on the page is not known before the
 %    page is constructed and shipped out. Therefore the position
 %    ist stored in references and are available for calculations
@@ -5322,7 +5322,8 @@ the height difference of the two baselines is
 % \subsection{Module \xmodule{savepos}}
 %
 %    Module \xmodule{savepos} provides an interface for
-%    \pdfTeX's \cmd{\pdfsavepos}, see the manual for
+%    \pdfTeX's \cmd{\pdfsavepos} and similar commands from
+%    the other engines, see the manual for
 %    \pdfTeX.
 %
 % \subsubsection{Identification}
@@ -5341,50 +5342,15 @@ the height difference of the two baselines is
 %
 % \subsubsection{Availability}
 %
-%    First we check, whether the feature is available.
-%    \begin{macrocode}
-\ifx\directlua\@undefined
-\ltx@IfUndefined{pdfsavepos}{%
-  \PackageError\ZREF@name{%
-    \string\pdfsavepos\space is not supported.\MessageBreak
-    It is provided by pdfTeX (1.40) or XeTeX%
-  }\ZREF@UpdatePdfTeX
-  \endinput
-}{}%
-\fi
-%    \end{macrocode}
-%    In PDF mode we are done. However support for DVI mode
-%    was added later in version 1.40.0. In earlier versions
-%    \cs{pdfsavepos} is defined, but its execution raises
-%    an error. Note that \hologo{XeTeX} also provides \cs{pdfsavepos}.
-%    \begin{macrocode}
-\ifpdf
-\else
-  \ltx@IfUndefined{pdftexversion}{%
-  }{%
-    \ifnum\pdftexversion<140 %
-      \PackageError\ZREF@name{%
-        \string\pdfsavepos\space is not supported in DVI mode%
-        \MessageBreak
-        of this pdfTeX version%
-      }\ZREF@UpdatePdfTeX
-      \expandafter\expandafter\expandafter\endinput
-    \fi
-  }%
-\fi
-%    \end{macrocode}
+% We now assume that it is available always.
 %
 % \subsubsection{Setup}
 %
 %    \begin{macrocode}
 \zref@newlist{savepos}
-\ifx\directlua\@undefined
-  \zref@newprop*{posx}[0]{\the\pdflastxpos}
-  \zref@newprop*{posy}[0]{\the\pdflastypos}
-\else
-  \zref@newprop*{posx}[0]{\the\lastxpos}
-  \zref@newprop*{posy}[0]{\the\lastypos}
-\fi
+\ExplSyntaxOn
+  \zref@newprop*{posx}[0]{\int_use:N \tex_lastxpos:D}
+  \zref@newprop*{posy}[0]{\int_use:N \tex_lastypos:D}
 \zref@addprops{savepos}{posx,posy}
 %    \end{macrocode}
 %
@@ -5392,19 +5358,11 @@ the height difference of the two baselines is
 %
 %    \begin{macro}{\zref@savepos}
 %    \begin{macrocode}
-\ifx\directlua\@undefined
   \def\zref@savepos{%
     \if@filesw
-      \pdfsavepos
-    \fi
-  }
-\else
-  \def\zref@savepos{%
-    \if@filesw
-      \savepos
-    \fi
-  }
-\fi
+      \tex_savepos:D
+    \fi}
+\ExplSyntaxOff
 %    \end{macrocode}
 %    \end{macro}
 %
@@ -5415,13 +5373,7 @@ the height difference of the two baselines is
   \if@filesw
     \zref@savepos
     #1{#3}{#2}%
-    \ltx@IfUndefined{TeXXeTstate}{%
-    }{%
-      \ifnum\TeXXeTstate=\ltx@zero
-      \else
-        \zref@savepos
-      \fi
-    }%
+    \zref@savepos
   \fi
   \@esphack
 }
@@ -5553,15 +5505,7 @@ the height difference of the two baselines is
 %    \begin{macrocode}
 \newcommand*{\zref@absposnumx}[3]{%
   \number
-%  \ifnum#1>\ltx@zero
-%    \zref@ifrefundefined{thepage#1}{%
-%      0%
-%    }{%
       \numexpr\ZREF@absposnum{thepage#1}{#2}{x}{#3}\relax
-%    }%
-%  \else
-%    0%
-%  \fi
 }
 %    \end{macrocode}
 %    \end{macro}
@@ -5570,15 +5514,7 @@ the height difference of the two baselines is
 %    \begin{macrocode}
 \newcommand*{\zref@absposnumy}[3]{%
   \number
-%  \ifnum#1>\ltx@zero
-%    \zref@ifrefundefined{thepage#1}{%
-%      0%
-%    }{%
       \numexpr\ZREF@absposnum{thepage#1}{#2}{y}{#3}\relax
-%    }%
-%  \else
-%    0%
-%  \fi
 }
 %    \end{macrocode}
 %    \end{macro}
@@ -6223,7 +6159,7 @@ the height difference of the two baselines is
     \global\advance\c@zref@unique\ltx@one
     \begingroup
       \def\ZREF@temp{zref@\number\c@zref@unique}%
-      \pdfsavepos
+      \csname tex_savepos:D\endcsname
       \zref@labelbyprops{\thezref@unique L}{posx}%
       \setlength{\dimen@}{\ZREF@df@unit}%
       \zref@ifrefundefined{\thezref@unique R}{%
@@ -6237,7 +6173,7 @@ the height difference of the two baselines is
           \ZREF@dotfill
         \fi
       }%
-      \pdfsavepos
+      \csname tex_savepos:D\endcsname
       \zref@labelbyprops{\thezref@unique R}{posx}%
     \endgroup
     \kern\z@
