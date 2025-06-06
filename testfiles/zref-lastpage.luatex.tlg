@@ -1,11 +1,13 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
--------- zref-abspage-14.aux (start) ---------
-(zref-abspage-14.aux) \relax[nl]
+-------- zref-lastpage.aux (start) ---------
+(zref-lastpage.aux) \relax[nl]
 \providecommand\zref@newlabel[2]{}[nl]
-\zref@newlabel{blub}{\default{}\page{2}\abspage{2}}[nl]
+\@writefile{toc}{\contentsline {section}{\numberline {1}a}{1}{}\protected@file@percent }[nl]
+\@writefile{toc}{\contentsline {section}{\numberline {2}b}{2}{}\protected@file@percent }[nl]
+\zref@newlabel{LastPage}{\default{2}\page{2}\abspage{2}\thefoo{1}\valuefoo{1}\section{2}}[nl]
 \gdef \@abspage@last{2}[nl]
--------- zref-abspage-14.aux (end) -----------
+-------- zref-lastpage.aux (end) -----------
 Completed box being shipped out [1]
 \vbox(633.0+0.0)x407.0, direction TLT
 .\glue 16.0
@@ -16,20 +18,26 @@ Completed box being shipped out [1]
 ....\hbox(0.0+0.0)x345.0, direction TLT
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
-..\vbox(550.0+0.0)x345.0, glue set 539.94232fil, direction TLT
+..\vbox(550.0+0.0)x345.0, glue set 529.94403fil, direction TLT
 ...\write-{}
-...\glue(\topskip) 5.69
-...\hbox(4.31+0.0)x345.0, glue set 324.72fil, direction TLT
+...\glue(\topskip) 0.5536
+...\hbox(9.4464+0.0864)x345.0, glue set 314.61603fil, direction TLT
 ....\localpar
 .....\localinterlinepenalty=0
 .....\localbrokenpenalty=0
 .....\localleftbox=null
 .....\localrightbox=null
-....\hbox(0.0+0.0)x15.0, direction TLT
-....\TU/lmr/m/n/10 x
+....\hbox(9.4464+0.0)x22.50719, direction TLT
+.....\glue 0.0
+.....\TU/lmr/bx/n/14.4 1
+.....\glue 14.4
+....\TU/lmr/bx/n/14.4 a
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
+...\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {1}a}{\thepage }{}\protected@file@percent }}
+...\penalty 10000
+...\glue 9.913 plus 0.86198
 ...\glue 0.0 plus 1.0fil
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil
@@ -49,24 +57,25 @@ Completed box being shipped out [2]
 ....\hbox(0.0+0.0)x345.0, direction TLT
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
-..\vbox(550.0+0.0)x345.0, glue set 539.94232fil, direction TLT
-...\write1{\zref@newlabel{blub}{\default{}\page{\Z@C@page }\abspage{\Z@C@abspage }}}
-...\glue(\topskip) 3.34
-...\hbox(6.66+0.0)x345.0, glue set 305.83002fil, direction TLT
+..\vbox(550.0+0.0)x345.0, glue set 529.94403fil, direction TLT
+...\glue(\topskip) 0.00641
+...\hbox(9.99359+0.0864)x345.0, glue set 313.4928fil, direction TLT
 ....\localpar
 .....\localinterlinepenalty=0
 .....\localbrokenpenalty=0
 .....\localleftbox=null
 .....\localrightbox=null
-....\hbox(0.0+0.0)x15.0, direction TLT
-....\TU/lmr/m/n/10 2
-....\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-....\TU/lmr/m/n/10 x
-....\TU/lmr/m/n/10 x
-....\TU/lmr/m/n/10 x
+....\hbox(9.4464+0.0)x22.50719, direction TLT
+.....\glue 0.0
+.....\TU/lmr/bx/n/14.4 2
+.....\glue 14.4
+....\TU/lmr/bx/n/14.4 b
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
+...\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {2}b}{\thepage }{}\protected@file@percent }}
+...\penalty 10000
+...\glue 9.913 plus 0.86198
 ...\glue 0.0 plus 1.0fil
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil
@@ -76,4 +85,4 @@ Completed box being shipped out [2]
 ....\glue 0.0 plus 1.0fil
 ....\TU/lmr/m/n/10 2
 ....\glue 0.0 plus 1.0fil
-(zref-abspage-14.aux)
+(zref-lastpage.aux)

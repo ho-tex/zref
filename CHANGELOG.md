@@ -8,6 +8,7 @@ this project uses date-based 'snapshot' version identifiers.
 ## [Unreleased]
 ### Fixed
  - correct use of \pdfsavepos, issue #20
+ - correct lastpage handling, issue #22
  
 ## [2023-09-14]
 

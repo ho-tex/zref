@@ -1,11 +1,13 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
--------- zref-abspage-14.aux (start) ---------
-(zref-abspage-14.aux) \relax[nl]
+-------- zref-lastpage.aux (start) ---------
+(zref-lastpage.aux) \relax[nl]
 \providecommand\zref@newlabel[2]{}[nl]
-\zref@newlabel{blub}{\default{}\page{2}\abspage{2}}[nl]
+\@writefile{toc}{\contentsline {section}{\numberline {1}a}{1}{}\protected@file@percent }[nl]
+\@writefile{toc}{\contentsline {section}{\numberline {2}b}{2}{}\protected@file@percent }[nl]
+\zref@newlabel{LastPage}{\default{2}\page{1}\abspage{2}\thefoo{1}\valuefoo{1}\section{2}}[nl]
 \gdef \@abspage@last{2}[nl]
--------- zref-abspage-14.aux (end) -----------
+-------- zref-lastpage.aux (end) -----------
 Completed box being shipped out [1]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
@@ -16,15 +18,21 @@ Completed box being shipped out [1]
 ....\hbox(0.0+0.0)x345.0
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
-..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
+..\vbox(550.0+0.0)x345.0, glue set 530.04063fil
 ...\write-{}
-...\glue(\topskip) 5.69446
-...\hbox(4.30554+0.0)x345.0, glue set 324.7222fil
-....\hbox(0.0+0.0)x15.0
-....\OT1/cmr/m/n/10 x
+...\glue(\topskip) 0.72002
+...\hbox(9.27998+0.0)x345.0, glue set 312.82504fil
+....\hbox(9.27998+0.0)x24.29997
+.....\glue 0.0
+.....\OT1/cmr/bx/n/14.4 1
+.....\glue 16.19998
+....\OT1/cmr/bx/n/14.4 a
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
+...\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {1}a}{\thepage }{}\protected@file@percent }}
+...\penalty 10000
+...\glue 9.90276 plus 0.86108
 ...\glue 0.0 plus 1.0fil
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil
@@ -44,19 +52,20 @@ Completed box being shipped out [2]
 ....\hbox(0.0+0.0)x345.0
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
-..\vbox(550.0+0.0)x345.0, glue set 539.94232fil
-...\write1{\zref@newlabel{blub}{\default{}\page{\Z@C@page }\abspage{\Z@C@abspage }}}
-...\glue(\topskip) 3.55556
-...\hbox(6.44444+0.0)x345.0, glue set 305.83325fil
-....\hbox(0.0+0.0)x15.0
-....\OT1/cmr/m/n/10 2
-....\glue 3.33333 plus 1.66666 minus 1.11111
-....\OT1/cmr/m/n/10 x
-....\OT1/cmr/m/n/10 x
-....\OT1/cmr/m/n/10 x
+..\vbox(550.0+0.0)x345.0, glue set 530.04063fil
+...\glue(\topskip) 0.00002
+...\hbox(9.99998+0.0)x345.0, glue set 311.70004fil
+....\hbox(9.27998+0.0)x24.29997
+.....\glue 0.0
+.....\OT1/cmr/bx/n/14.4 2
+.....\glue 16.19998
+....\OT1/cmr/bx/n/14.4 b
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
+...\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {2}b}{\thepage }{}\protected@file@percent }}
+...\penalty 10000
+...\glue 9.90276 plus 0.86108
 ...\glue 0.0 plus 1.0fil
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil
@@ -66,4 +75,4 @@ Completed box being shipped out [2]
 ....\glue 0.0 plus 1.0fil
 ....\OT1/cmr/m/n/10 2
 ....\glue 0.0 plus 1.0fil
-(zref-abspage-14.aux)
+(zref-lastpage.aux)

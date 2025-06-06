@@ -3279,9 +3279,22 @@ the height difference of the two baselines is
 %    If module \xmodule{abspage} is given, also the absolute
 %    page number is available, because the properties of
 %    the main property list are used.
+%    2025-06-07: adapted to new format which changes the page at end.
 %    \begin{macrocode}
 \zref@newlist{LastPage}
+\@ifl@t@r\fmtversion{2025-06-01}{%
 \AddToHook {enddocument/afterlastpage}{%
+  \if@filesw
+    \begingroup
+      \toks@\expandafter\expandafter\expandafter{%
+        \expandafter\Z@L@main
+        \Z@L@LastPage
+      }%
+      \expandafter\ZREF@label\expandafter{\the\toks@}{LastPage}%
+    \endgroup
+  \fi
+}}
+{\AddToHook {enddocument/afterlastpage}{%
   \if@filesw
     \begingroup
       \advance\c@page\m@ne
@@ -3294,7 +3307,7 @@ the height difference of the two baselines is
       }%
     \endgroup
   \fi
-}
+}}
 %    \end{macrocode}
 %    \begin{macro}{\zref@iflastpage}
 %    \begin{macrocode}

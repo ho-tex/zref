@@ -47,9 +47,7 @@ File: amsgen.sty ....-..-.. v... generic functions
 )) (../l3backend-luatex.def
 File: l3backend-luatex.def ....-..-.. L3 backend support: PDF output (LuaTeX)
 \l__color_backend_stack_int=\count...
-Inserting `l3color' in `luaotfload.parse_color'.
-\l__pdf_internal_box=\box...
-) (zref-test-perpage-amstext.aux)
+Inserting `l3color' in `luaotfload.parse_color'.) (zref-test-perpage-amstext.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line ....
 LaTeX Font Info:    ... okay on input line ....
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line ....
@@ -59,7 +57,6 @@ LaTeX Font Info:    ... okay on input line ....
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line ....
 LaTeX Font Info:    ... okay on input line ....
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line ....
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line ....
 LaTeX Font Info:    ... okay on input line ....
 LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line ....
 LaTeX Font Info:    ... okay on input line ....
@@ -87,7 +84,7 @@ Completed box being shipped out [1]
 ....\hbox(0.0+0.0)x345.0, direction TLT
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
-..\vbox(550.0+0.0)x345.0, glue set 524.13068fil, direction TLT
+..\vbox(550.0+0.0)x345.0, glue set 523.9107fil, direction TLT
 ...\write-{}
 ...\glue(\topskip) 1.72308
 ...\hbox(8.27692+0.22)x345.0, glue set 288.56702fil, direction TLT
@@ -118,7 +115,6 @@ Completed box being shipped out [1]
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
-...\glue -0.22
 ...\glue 0.0 plus 1.0fil
 ...\glue 9.0 plus 4.0 minus 2.0
 ...\kern-3.0
@@ -174,7 +170,7 @@ Completed box being shipped out [2]
 ....\hbox(0.0+0.0)x345.0, direction TLT
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
-..\vbox(550.0+0.0)x345.0, glue set 524.13068fil, direction TLT
+..\vbox(550.0+0.0)x345.0, glue set 523.9107fil, direction TLT
 ...\glue(\topskip) 1.72308
 ...\hbox(8.27692+0.22)x345.0, glue set 288.56702fil, direction TLT
 ....\localpar
@@ -204,7 +200,6 @@ Completed box being shipped out [2]
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
-...\glue -0.22
 ...\glue 0.0 plus 1.0fil
 ...\glue 9.0 plus 4.0 minus 2.0
 ...\kern-3.0
