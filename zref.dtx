@@ -1496,8 +1496,9 @@ and the derived files
 %    Chapters are wrapped inside \cs{ChapterStart} and
 %    \cs{ChapterStop}. The first argument \verb|#1| of \cs{ChapterStart}
 %    is used to form a label id \verb|chap:#1|. At the end of
-%    the chapter another label is set by \cs{zref@wrapper@immediate}, because
-%    otherwise at the end of document a deferred write would not
+%    the chapter another label is set by \cs{zref@wrapper@immediate} in older
+%    LaTeX formats, because otherwise at the end of document a 
+%    deferred write would not
 %    be written, because there is no page for shipout.
 %
 %    Also this example shows how chapter titles can be recorded.
