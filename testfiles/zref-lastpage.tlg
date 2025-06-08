@@ -5,7 +5,7 @@ Don't change this file in any respect.
 \providecommand\zref@newlabel[2]{}[nl]
 \@writefile{toc}{\contentsline {section}{\numberline {1}a}{1}{}\protected@file@percent }[nl]
 \@writefile{toc}{\contentsline {section}{\numberline {2}b}{2}{}\protected@file@percent }[nl]
-\zref@newlabel{LastPage}{\default{2}\page{1}\abspage{2}\thefoo{1}\valuefoo{1}\section{2}}[nl]
+\zref@newlabel{LastPage}{\default{2}\page{2}\abspage{2}\thefoo{1}\valuefoo{1}\section{2}}[nl]
 \gdef \@abspage@last{2}[nl]
 -------- zref-lastpage.aux (end) -----------
 Completed box being shipped out [1]
