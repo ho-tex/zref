@@ -14,7 +14,7 @@ reference scheme.
 ## Copyright (C)
 
 * 2007, 2009-2011  Heiko Oberdiek
-* 2016-2023        Oberdiek Package Support Group
+* 2016-2025        Oberdiek Package Support Group
 
 ## License
 LATEX Project Public License, version 1.3c or later.
