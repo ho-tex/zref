@@ -1,6 +1,6 @@
 # zref packages for LaTeX
 
-Version: 2023-09-14 v2.35
+Version: 2025-06-08 v2.36
 
 
 Package zref tries to get rid of the restriction
