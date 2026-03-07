@@ -3098,13 +3098,25 @@ the height difference of the two baselines is
 %    used inside section titles, but it must not go into the
 %    table of contents. Therefore we have to check this situation.
 %    \begin{macrocode}
-\newcommand*\zlabel{%
-  \ifx\label\ltx@gobble
-    \expandafter\ltx@gobble
-  \else
-    \expandafter\zref@wrapper@babel\expandafter\zref@label
-  \fi
-}%
+\IfFormatAtLeastTF{2025-06-01}
+ {
+   \newcommand*\zlabel{%
+     \ifx\label\@gobble@om
+       \expandafter\ltx@gobble
+     \else
+       \expandafter\zref@wrapper@babel\expandafter\zref@label
+     \fi
+   }
+ }
+ {
+   \newcommand*\zlabel{%
+     \ifx\label\ltx@gobble
+       \expandafter\ltx@gobble
+     \else
+       \expandafter\zref@wrapper@babel\expandafter\zref@label
+     \fi
+   }
+ }%
 %    \end{macrocode}
 %    \end{macro}
 %

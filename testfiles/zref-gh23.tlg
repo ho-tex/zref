@@ -1,0 +1,9 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+-------- zref-gh23.aux (start) ---------
+(zref-gh23.aux) \relax[nl]
+\providecommand\zref@newlabel[2]{}[nl]
+\zref@newlabel{blub}{\default{1}\page{1}}[nl]
+\@writefile{toc}{\contentsline {section}{\numberline {1}abc}{1}{}\protected@file@percent }[nl]
+\gdef \@abspage@last{1}[nl]
+-------- zref-gh23.aux (end) -----------

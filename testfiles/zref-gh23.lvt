@@ -1,0 +1,11 @@
+\input{regression-test}
+\documentclass{article}
+\usepackage{zref-user}
+\START
+\SHOWFILE{\jobname.aux}
+\OMIT
+\begin{document}
+\tableofcontents
+\section{abc\zlabel{blub}}
+ 
+\end{document}
